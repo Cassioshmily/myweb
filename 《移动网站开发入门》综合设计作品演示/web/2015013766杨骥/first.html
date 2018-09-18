@@ -1,0 +1,51 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+<body background="beijingtu.jpg"; style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop">
+<source src="guidaobgm.mp3" type="audio/mpeg" /></audio>
+<script>
+function changetext(id)
+{
+id.innerHTML="天剑鬼刀阿修罗，黑白圣堂血天使";
+}
+</script>
+</head>
+
+<h1 align="center" onclick="changetext(this)";>鬼刀</h1>
+<a href="gui1.html" target="_blank" style="font-family:verdana;color:red;font-size:35px;">鬼刀简介</a><br>
+<a href="gui2.html" target="_blank" style="font-family:verdana;color:pink;font-size:35px;position:relative;
+left:160px;">鬼刀作者</a><br>
+
+<p style="font-family:verdana;color:#FFE4B5;font-size:30px;text-indent: 2em;" >   鬼刀,传说中被魔鬼下过诅咒的刀,它有着神秘的力量,有人说他能吸引来天上的鬼神,给人间带来祸害，有人说它发出的光能把天下最硬心肠的美女变得百依百顺。它真正的魔力到底是什么呢?没有人知道。 鬼刀曾在江湖上出过一次,引发了一片腥风血雨。后来,这一把刀被一个侠客埋在地下,江湖才渐渐平静下来。随着年轮的消逝,鬼刀也慢慢地被人遗忘。 直到有一天,一个流浪的少年来到一座古墓中住下后,偶然发现了它</p>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="txt"></div>
+<a href="gui3.html" target="_blank" style="font-family:verdana;color:black;font-size:35px;position:relative;
+left:900px">冰之公主</a><br>
+<a href="gui4.html" target="_blank" style="font-family:verdana;color:yellow;font-size:35px;position:relative;
+left:1050px">鬼刀六极</a><br>
+
+</body>
+</html>

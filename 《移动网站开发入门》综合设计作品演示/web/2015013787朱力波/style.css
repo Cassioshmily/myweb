@@ -1,0 +1,79 @@
+h1 	
+	{
+		color:#87CEEB;
+	}
+
+p  	
+ 	{ 	
+ 		color:	#2F4F4F;
+ 	}
+
+.login  {
+			color:#F0FFFF;
+			position:absolute; 
+			left:90px; 
+			top:100px;
+		}
+
+
+ul 
+	{
+		color:	#2F4F4F;
+	}
+
+li  
+	{ 
+		display:inline;
+		text-decoration: none; 
+	} 
+
+a:link  
+		{ 
+			color: yellow;
+			text-decoration: none; 
+		}
+a:visited 	
+			{
+				color: red;
+				text-decoration: none; 
+			}
+a:hover  
+		{
+			color:green;
+			text-decoration: none; 
+		}
+
+a:active { 
+			text-decoration: none; 
+		} 
+
+body 	
+		{
+			background-image:url(./tombraider.png); background-size: 100% 260%;
+			background-repeat: no-repeat;
+		}
+
+form 
+		{
+			color: #F0FFFF;
+		}
+
+
+.panel  {
+			text-align: center;
+			display:none;
+		
+	    }
+
+.flip   {	
+			color:#7FFFD4;
+			text-align: center;
+		}
+
+address {
+		color:#FFF;
+		position:absolute;
+		left:45%;
+		top:870px;
+		font-size:16px;
+		}

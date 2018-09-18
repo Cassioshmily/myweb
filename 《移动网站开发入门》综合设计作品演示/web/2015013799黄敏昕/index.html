@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 视觉处理学习网页</title>
+    <link rel="stylesheet" type="text/css" href="./static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./static/content/site.css" />
+    <script src="./static/scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="./index.html" class="navbar-brand">Home</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="./emmm.html">我的JS</a></li>
+                    <li><a href="./second.html">我的CSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        <div class="jumbotron" style="background-image: url('IMG_3122.JPG');border-image-repeat: no-repeat;background-size: 100% 100%;">
+    <h1 style="color: white">ARM+FPGA机器视觉处理系统</h1>
+    <p class="lead" style="color: white">Machine Vision Processing System</p>
+    <p><a href="http://www.playgroundunknown.xin/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>ARM系统</h2>
+        <p>
+            Advanced RISC Machines.<br>
+            linux操作系统、arm可执行文件的编译、hps与fpga的交互.
+        </p>
+        <p><a class="btn btn-default" href="./home.html">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>图像处理算法</h2>
+        <p>Digital Image Processing Algorithm.<br>
+            opceCV、深度学习.
+        </p>
+        <p><a class="btn btn-default" href="./about.html">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>FPGA系统</h2>
+        <p>Field－Programmable Gate Array.<br>
+            soc板gpio的控制、摄像头的使用.
+        </p>
+        <p><a class="btn btn-default" href="./fpga.html"./>Learn more &raquo;</a></p>
+    </div>
+</div>
+        <hr />
+     <script>
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+    </script>       
+ <body onload="startTime()">
+<footer style="text-align: center;">
+<div id="txt"></div>
+<p>By Cassioshmily</p>
+<p>Always Keep The Faith...Hope To The End</p>
+</div></body>
+
+        </footer>
+    </div>
+
+    <script src="./static/scripts/jquery-1.10.2.js"></script>
+    <script src="./static/scripts/bootstrap.js"></script>
+    <script src="/static/scripts/respond.js"></script>
+
+</body>
+</html>

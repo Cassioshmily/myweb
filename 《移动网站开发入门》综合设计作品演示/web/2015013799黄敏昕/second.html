@@ -1,0 +1,89 @@
+<meta charset="UTF-8">
+<!doctype html>
+<html>
+<head>
+<title>简单的HTML 5页面</title>	
+
+<style type="text/css">
+a:link {color: #FF0000}
+a:visited {color: #696969}
+a:hover {color: #D87093;letter-spacing: 1px;}
+a:active {color: #0000FF;} 	
+ul.disc {list-style-type: disc}
+ul.circle {list-style-type: circle}
+table, td, th{border:1px solid #778899;}
+th{background-color:#FAFAD2;color:#A52A2A;}
+</style></head><!--超链接风格、列表、表格样式-->
+
+<body>
+	<header>
+		<h1 style="text-align: center;color: #222222;font-family: 黑体">
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507700635977&di=809cd2f23811ef94df9a92a3b7dfeed8&imgtype=0&src=http%3A%2F%2Fimages.vapee.com%2Fvapee_cache%2Fimages%2F2015111%2F5%2Ff07989776b077919bb653aa9429b5718.jpg" width="50" height="55" >
+			你的帐户
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507700635977&di=809cd2f23811ef94df9a92a3b7dfeed8&imgtype=0&src=http%3A%2F%2Fimages.vapee.com%2Fvapee_cache%2Fimages%2F2015111%2F5%2Ff07989776b077919bb653aa9429b5718.jpg" width="50" height="55" >
+		</h1>      	<!--在标题两旁插上图片-->										
+		<h2 style="text-align: center;color: #2F4F4F">姓名：黄敏昕  学号：2015013799 </h2>
+	</header>
+<body background="http://img2.zol.com.cn/product/100_940x705/219/ceLPJo5KOmU.jpg"		
+	  style="background-repeat:no-repeat;background-size:100% 100%;background-attachment:fixed;"> 	<!-- 分别为背景图像地址 不随页面滚动 背景不重复 -->
+<form style="text-align: left;">
+		<fieldset style="background-color: #FFFFFF ;filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8"> 	<!--背景透明度80%-->
+		
+		<legend style="font-family:黑体;font-size: 25px;color:#000000;font-weight: bold;">个人信息</legend>	<!--字体、大小、颜色、粗细-->
+		<p style="font-family: verdana;font-weight: bolder;">你的名字：
+			<input type="text" name="name"></p>
+		<p style="font-family: verdana;font-weight: bolder;">你的手机：
+			<input type="text" name="number"></p>
+		<p style="font-family: verdana;font-weight: bolder;">你的性别：
+			<input type="radio" name="sex" value="男" checked>男
+			<input type="radio" name="sex" value="女" >女</p>
+</form> 
+<table border="1">
+	<p style="font-family: verdana;font-weight: bolder;">你感兴趣的视频：
+	<tr>
+	<th>番剧</th>
+	<th>直播</th>
+	</tr>
+	<tr>
+	<td>欢迎来到实力至上主义的教室</td>
+	<td> I wanna be the guy</td>
+	</tr>
+	<tr>
+	<td>Re：从零开始的异世界生活</td>
+	<td>绝地逃生</td>
+	</tr>
+	</table>
+	<p style="font-family: verdana;font-weight: bolder;">你关注的游戏区up主：</p>
+		<ul class="disc">
+		<li>怕上火暴王老菊</li>
+		<li>逍遥散人</li>
+		<li>敖厂长</li>
+		</ul>
+	<p style="font-family: verdana;font-weight: bolder;">你关注的美食区up主：</p>
+		<ul class="circle">
+		<li>nya酱的一生</li>
+		<li>服霸吞吞</li>
+		<li>木下大胃王</li>
+		</ul><br>
+
+<form style="font-family: verdana">
+快戳我：
+<a href="https://www.bilibili.com" target="_blank">哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</a>
+</form>	
+
+	<p style="font-family:verdana;color:#FF5151;letter-spacing: 2px">Always Keep The Faith, </p>
+	<p style="font-family:verdana;color:#FF5151;letter-spacing: 2px">Hope To The End. </p> <!--字体、颜色、字母间隔-->
+
+<p>
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505904029612&di=e3f059dd107e9d591f70d45d61f042c4&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201607%2F07%2F20160707151006_QdCkj.thumb.700_0.jpeg" width="140" height="100" />
+</p>
+
+	<p style="text-decoration: underline;border:red solid thin;outline:#00008B dotted thick;text-align: center;font-weight: bold;">
+		 富强、民主、文明、和谐，</br>
+		 自由、平等、公正、法治，</br>									
+		 爱国、敬业、诚信、友善。</p> </fieldset>
+	<br><!--轮廓-->
+	<form style="text-align: center;">
+	<button type="button" onclick="alert('提交成功!')">提交</button>
+	<br>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+
+<head>
+	<title>The newbie web page</title>
+	<link rel="stylesheet" type="text/css"  href="./style.css" />
+	<link rel="stylesheet" type="text/css"  href="./button.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready
+			(function()
+			{
+  				$("button").click(function(){
+  				$(this).hide();
+  			});
+  			});
+		
+		function formSubmit()
+		{
+			document.getElementById("loginForm").submit()
+		}	
+		
+		$(document).ready
+			(function()
+			{
+				$(".flip").click(function(){
+    			$(".panel").slideToggle("slow");
+ 
+  			});
+			});
+
+	
+</script>		
+</head>
+
+<body>
+	<header>
+		<div>
+			<center>
+				<h1>Tomb Raider</h1>
+			</center>
+		</div>	
+	</header>
+	
+	<script>
+		function myFunction1()
+		{
+			document.getElementById("demo1").innerHTML="已打开";
+		}
+		function myFunction2()
+		{
+			document.getElementById("demo2").innerHTML="已打开";
+		}
+	</script>
+	
+	<button class="button button-raised button-royal" type="button" style="position:absolute; left:45%; top:900px;">
+		喜欢就赞一个呗
+	</button>	
+	
+	<div  id="aaa"><center><img src="跳绳索.jpg" width="500" height="300"; ></center></div> 
+	
+	<p class="flip">Tomb Raider</p>
+    <div class = "panel">
+    <ul >
+        <li>
+        	<abbr title="photos">
+        		<a  href="./photo.html" onclick="myFunction1()" target="_blank">
+        			myphoto 
+        			<p id="demo1">(点击此处进入)</p> 
+        		</a>
+        	</abbr>  
+        </li>        											
+        <li >
+        	<abbr title="movies">
+        		<a href="./movies.html" onclick="myFunction2()" target="_blank">
+        			movies 
+        			<p id="demo2">(点击此处进入)</p>
+        		</a>
+        	</abbr> 
+       	</li>
+	</ul>
+</div>
+
+	<script type="text/javascript">
+    	function validate()
+    	{
+      		account=document.loginForm.account.value;
+      		password=document.loginForm.password.value;
+      		if(account==""){
+        		alert("帐号不能为空");
+        		document.loginForm.account.focus(); return; }
+        	else if(password==""){
+        		alert("密码不能为空");
+        		document.loginForm.password.focus(); return; }
+        	else if(account!="yeasipy"){
+        		alert("帐号或密码错误")
+        		document.loginForm.password.focus(); return; }
+      		else if(password!="123456"){
+        		alert("帐号或密码错误")
+        		document.loginForm.password.focus(); return; }
+      		else {alert("欢迎来到古墓丽影主页");}
+
+      }
+  	</script>
+  	
+  	<div>
+		<center>
+  		<p class="login">欢迎您登录：</p>
+  		<form name="loginForm" style="position:absolute; left:90px; top:150px; filter:alpha(Opacity=80);-moz-opacity:0;opacity: 0.5;">
+    		输入帐号：<input name="account" id="acc"  type="text"><br>
+    		输入密码：<input name="password" type="password"><br>
+    		&emsp;&emsp;<input type="button" onclick="validate()" class="button button-raised button-primary button-pill" value="登录">
+			
+		</center>
+	</div>
+
+    <address>
+		<a href="http://www.tombraider.cn/" target="_blank" >
+       		需要了解更多请点击此处 
+    	</a>
+	</address>
+
+	
+</body>
+</html>

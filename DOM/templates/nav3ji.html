@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    .top-nav{
+      font-size: 12px;
+      font-weight: bold;
+      list-style: none;
+      border-bottom:8px solid #dc4e1b;
+      overflow: auto;
+    }
+    .top-nav li{
+      float: left;
+      margin-right: 1px;
+    }
+    .top-nav li a{
+      line-height: 20px;
+      text-decoration:none;
+      background: #ddd;
+      color: #666;
+      display: block;
+      width: 80px;
+      text-align: center;
+    }
+    .top-nav li ul{
+      display: none;
+      list-style: none;
+      padding: 0;
+      position: relative;
+    }
+    .top-nav li:hover ul{
+      display: block;
+      width: 80px;
+    }
+    .top-nav li:hover ul li ul{
+      display: none;
+    }
+    .top-nav li ul li:hover ul{
+      display: block;
+      top: 0;
+      left: 80px;
+      position: absolute;
+    }
+    </style>
+  </head>
+  <body>
+    <ul class="top-nav">
+      <li><a href="#">首页</a></li>
+      <li><a href="#">课程大厅</a></li>
+      <li><a href="#">学习中心 +</a>
+        <ul>
+          <li><a href="#">前段课程 +</a>
+            <ul>
+              <li><a href="#">js</a></li>
+              <li><a href="#">jq</a></li>
+              <li><a href="#">css</a></li>
+            </ul>
+          </li>
+          <li><a href="#">手机开发</a></li>
+          <li><a href="#">后端编程</a></li>
+        </ul>
+      </li>
+      <li><a href="#">关于我们</a></li>
+    </ul>
+  </body>
+</html>

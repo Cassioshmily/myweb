@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+<link rel="stylesheet" href="./static/content/emcss.css">
+<script src="/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+
+function disp_prompt()
+  {
+  var name=prompt("请输入您的手机号码")
+  if (name!=null && name!="")
+    {
+    document.write("注册成功！")
+    }
+  }
+
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+
+function log()
+{
+try
+{ 
+var x=document.getElementById("demo").value;
+if(x=="")    throw "密码不能为空";
+if(x=="1324712") alert("登录成功！");
+else throw "密码错误"
+}
+catch(err)
+{
+var y=document.getElementById("mess");
+y.innerHTML="错误：" + err + "。";
+}}
+
+</script>
+</head>
+
+<body>
+
+<div id="header">
+<h1 style="font-family: Geneva;font-size: 40px">iBelieve</h1>
+</div>
+
+
+<div id="adv">
+		<ul class="nav">
+			<li><a href="file:///Users/cassioshmily/Desktop/web-design/second.html" target="_blank">Home</a>
+			</li> 
+			<li><a href="file:///Users/cassioshmily/Desktop/web-design/first.html" target="_blank">Movie</a>
+			</li>
+			<li><a href="#">Comic</a>
+			</li>
+			<li><a href="#">TV</a>
+			</li>
+
+		</ul>
+</div>
+
+
+<div id="nav">
+<form>
+
+<p style="font-size: 12px;color: white;letter-spacing: -1px;">
+			用户名：
+    <input type="text" class="form-control"  placeholder="Name">
+			<br>
+			密码：<input id="demo" type="password" placeholder="Password" name="password">
+			<center>
+					<input type="button" onclick="log()" value="登录"> </button>
+				    <input type="button" onclick="disp_prompt()" value="注册"></center>
+		</p><p id="mess" style="font-size: 12px;text-align: center;color: #800000"></p>
+</div>
+</form>
+
+
+<div id="section">
+<h2 style="font-family: Western;">TVXQ</h2>
+<p onclick="this.innerHTML='Once I say I love you I think you would be gone, oh baby~ cuz we are too young to love so I can say little long~ hold you in my arms but I will be waiting for you to say you want me to be with you.'">HUG
+</p>
+</div>
+
+
+<body onload="startTime()">
+<div id="footer">
+<div id="txt"></div>
+<p>By Cassioshmily</p>
+<p>Always Keep The Faith...Hope To The End</p>
+
+</div></body>
+
+</body>
+</html>
+

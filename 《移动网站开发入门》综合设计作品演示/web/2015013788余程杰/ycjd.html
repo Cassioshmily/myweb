@@ -1,0 +1,130 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>暮光之城</title>
+	
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />	
+
+	  <link rel="stylesheet" href="css/style.css">
+	
+	<script>
+	
+
+	function myFunction()
+	{
+	document.getElementById("show").innerHTML="这是一个不错的介绍页面";
+	}
+	function mygetzh()
+	{
+		var str=document.getElementById("jyxsb").value;
+		alert("已成功注册帐号:"+ str);
+	}
+	
+	function myGetMi()
+	{
+	var x=document.getElementById("jyxsb").value;
+	var v=document.getElementById("jyx").value
+		if ((x!="")&&(v!=""))
+  		{
+  			alert("登录成功");
+  		}
+  		else
+  		{   
+  			if(x=="")
+			{
+			alert("请输入帐号");}
+			if(v=="")
+			{
+			alert("请输入密码");
+			}
+	 
+				
+  		}
+  	
+
+
+	}
+
+
+
+
+	</script>
+	<style type="text/css">
+		p.normal {font-style:normal}
+		p.italic {font-style:italic}
+		p.oblique {font-style:oblique}
+		h1.radio {background-image: url(5.JPG);  padding: 10px;}
+		h1:visited {color:red;} /* 已被访问的链接 */
+		h1:hover {color:fuchsia;text-decoration:none;}   /* 鼠标指针移动到链接上 */
+		h1:active {color:green;}  
+		ul.outside {list-style-image: url('6.jpg');padding: 10px;}/* 正在被点击的链接 */
+		table,td,th{border:1px solid black;}table{width:10%;}th{height:10px;}
+		h4{border: red solid thin;}h4.dashed {outline-style: dashed}
+	</style>
+
+</head>
+	
+	<div style="text-align: center;"> 
+    <body style="background-image:url(./tupian/newmoon.jpg); background-repeat:no-repeat;background-size:120% 160%">
+	<header>
+		<h1 href="http://www.360doc.com/content/10/1110/16/55126_68233486.shtml" class="radio" target="_blank">暮光之城vip页面</h1>
+		<h2 align="center">夜未央的IIS服务器上的站点 </h2>	
+			
+	</header>
+
+	<form>
+	帐号:<br>
+	<input type="text" name="帐号" id="jyxsb">
+	<br>	
+	密码:<br>
+	<input type="text" name="密码" id="jyx">
+	<br><br>
+	<button onclick="myGetMi()"；>登录</button>
+	 <button onclick="mygetzh()" >注册</button>
+	</form>
+	
+	<p id="show"> 这是大家对这个网页简单的评价
+		<button type="button" onclick="myFunction()">大家的评价</button>
+	</p>
+	
+	<p style="font-family:verdana;color:fuchsia">剧照</p>
+	
+	<p  class="oblique"><b>暮光之城:</b></p>
+	
+	<a href="shouye.html" class="title">界面导航</a>
+	
+	</div>
+	<h3>暮光之城周票房（万元）：</h3>
+		<table border="1">
+	<tr>
+  		<th>第一周</th>
+  		<th>5354</th>
+  		
+	</tr>
+	<tr>
+  		<th>第二周</th>
+  		<th>5400</th>
+	</tr>
+	<tr>
+  		<th>第三周</th>
+  		<th>4700</th>
+	</tr>
+	<tr>
+  		<th>第四周</th>
+  		<th>3620</th>
+	</tr>
+	</table>
+
+	
+
+	<ul>
+		<li>吸血鬼</li>
+    </ul>
+    
+	<h4 style="text-align:center"; h4 class="dashed" >Thanking your consume</h4>
+
+	
+									
+</body>
+</html>

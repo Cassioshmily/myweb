@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".yc").hide();
+  });
+  $("#show").click(function(){
+    $(".yc").show();
+  });
+});
+</script>
+
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+
+<style>
+body{
+	background-image: url(beijing.jpg);	
+}
+
+.ghj
+{
+	color: white ; 
+	font-size: 12px;
+}
+h1.m1
+{
+	color:black;	
+}
+h1.m2
+{
+	color:green;	
+}
+</style>
+
+</head>
+<body>
+<h1 class="m1" style="position:absolute; left:300px;  top:200px;" ><a href="shouye.html">网站首页</a></h1>
+<h1 class="m1" style="position:absolute; left:300px;  top:300px;" ><a href="chide.html">吃の诱惑</a></h1>
+<h1 class="m1" style="position:absolute; left:300px;  top:400px;" ><a href="yingshi.html">影视介绍</a></h1>
+<h1 class="m1" style="position:absolute; left:300px;  top:500px;" ><a href="zuozhe.html">关于作者</a></h1>
+<img  src="bg4.jpg"  width="20"; height="20px" style="position:absolute; left:280px;  top:230px; ">
+<img  src="bg4.jpg"  width="20"; height="20px" style="position:absolute; left:280px;  top:330px; ">
+<img  src="bg4.jpg"  width="20"; height="20px" style="position:absolute; left:280px;  top:430px; ">
+<img  src="bg4.jpg"  width="20"; height="20px" style="position:absolute; left:280px;  top:530px; ">
+
+<h1 class="m2" style="position:absolute; left:1300px; top:100px; ">小游戏</h1>
+<onclick id="show"><img src="stp.jpg" width="80px"; height="40px"; style="position:absolute; left:1200px; top:200px; "></onclick>
+<onclick id="hide"><img src="stt.jpg" width="80px"; height="40px"; style="position:absolute; left:1400px; top:200px; "></onclick>
+<embed src="AimBooster.swf" width="650px"; height="500px"; style="position:absolute; left:1000px; top:300px";></embed>
+<embed src="Two Steps From Hell - Victory.mp3"  volumelever="true" hidden="true" autostart="true" loop="false"  ></embed>
+<img class="yc" src="haha.jpg" width="650"; height="500px"; style="position:absolute; left:1000px;  top:300px; border:10px solid #FFA500; ">
+
+<div  style="position:absolute;   left:588px;  top:174px; background-image:url(sk.jpg)">
+<div><p >不是境况造就人，而是人造就境况。<br>
+        每一个成功者都有一个开始。<br>
+        勇于开始，才能找到成功的路。</p></div>
+</div>
+<div  style="position:absolute; left:588px;  top:260px;background-image:url(sk2.jpg)">
+<div><p>人生没有彩排，每天都是现场直播。<br>
+        带着感恩的心启程，学会爱，爱父<br>
+        母，爱自己，爱朋友，爱他人。</p></div>
+</div>
+<div  style="position:absolute; left:588px;  top:346px;background-image:url(sk3.jpg)">
+<div><p>必须时时乐见改变 但不要被改变支<br >
+		配,必须从过去的错误学习教训,而非<br >
+		依赖过去的成功</p></div>
+</div>
+
+<div  style="position:absolute;width:345px; height:40px; left:548px;  top:452px;background-image:url(bg13.png)">
+<div><p>电影推荐
+		</p></div>
+</div>
+<img  src="wufa2.jpg"  width="90"; height="90px" style="position:absolute; left:555px;  top:530px; ">
+<div  style="position:absolute;width:345px; height:40px; left:548px;  top:650px;background-image:url(bg13.png)">
+<div><p>热门剧集
+		</p></div>
+</div>
+<img  src="wufa1.jpg"  width="90"; height="90px" style="position:absolute; left:555px;  top:732px; ">
+
+<div  style="position:absolute;left:660px;  top:510px;width:220px; height:120px;background-image:url(heise.jpg)">
+<div><p class="ghj">《无法碰触》<br>
+終於去電影院看了這部的“神作”，只<br>
+能說：名不虛傳！！！ 這是一部讓你<br>
+從頭“笑”到尾的電影，或會心的微笑，<br>
+或開心的大笑，或自嘲的苦笑。。。傳<br>
+遞着默默溫情，給這個冬天，這個時代<br>
+帶來溫暖。
+		</p> </div>
+</div>
+
+<div  style="position:absolute;left:660px;  top:730px;width:220px; height:120px;background-image:url(heise.jpg)">
+<div><p class="ghj">《无法碰触》<br>
+现在想来觉得有些后悔，没能在最对<br>
+的时候看这样一部可爱的电影，像这<br>
+般欢乐温情的作品应该留到最苦逼的<br>
+现在来看，可我却偏偏选择了之前内<br>
+心最祥和的时候。
+		</p> </div>
+</div>
+
+<img  src="xixi.gif"   style="position:absolute; width:220px; height:100px;left:670px;  top:30px; ">
+</body>
+<body onload="startTime()">
+<div  id="txt" style="position:absolute;left:215px;  top:720px;font-size: 60px;color:#FF8C00 ;"></div>
+</body>
+
+
+</html>

@@ -1,0 +1,160 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}                                        /*默认边距与补白为0*/
+a {text-decoration: none}                                       /*链接风格无下划线*/
+ul{list-style:none;
+  }
+img{border: none;  }    /*插图边框默认无*/          
+body{background:white;/*背景为白色*/  
+    text-align: center;}/*文本居中*/
+div.fixednav{ 
+	 width: 100%;/*实现导航栏布满顶部*/
+	 height: 40px;
+	 position: fixed;/*固定导航栏*/
+	 top: 0px; /*使导航栏在最上面*/
+	 background:LavenderBlush ;/*设置背景色*/
+	 border:solid 1px #c3c3c3;/*设置边框*/
+} 
+		.nav_menuleft {top:20px;
+					   float: left;/*把文字放在左边*/
+		    			line-height: 20px;
+		    			font-weight: 700;
+		   				}
+		.nav_menuleft-item a {
+		 
+		  padding: 0px 30px; /*上和下内边距是 0px，左和右内边距是 100px。*/
+		  line-height: inherit;/*规定应该从父元素继承 line-height 属性的值*/
+		  cursor: pointer;/*改变光标，pointer是一只手*/
+		}
+
+		.nav_menuleft-item {top:0px;
+
+		 					 display: inline-block;/*设置为行内块元素，就可以设置其宽高啦*/
+		  					position: relative;/*生成相对定位的元素，相对于其正常位置进行定位。*/
+		  
+		}
+		.nav_menuleft-item:hover .nav_boxleft {
+		  display: block;
+		}
+		.nav_boxleft {
+		  		
+		    	display: none;
+		  		position: absolute;
+		  		width: 10px;
+		  		
+		}
+
+		.nav_boxleft-element:hover{color: red;}/*文字划动效果*/
+		.nav_boxleft-element:link {color:black;}    /* 未被访问的链接 */
+		.nav_boxleft-element:visited {color:lime;} /* 已被访问的链接 */
+		.nav_boxleft-element:hover {color: red;}/* 鼠标指针移动到链接上 */ 
+		.nav_boxleft-element:active {color:green;}  /* 正在被点击的链接 */
+		
+		.nav_menuright {
+			float: right;/*把文字放在左边*/
+		    line-height: 20px;
+		    font-weight: 700;
+		   }
+		.nav_menuright-item a {
+		 
+		  padding: 0px 20px; /*上和下内边距是 0px，左和右内边距是 100px。*/
+		  line-height: inherit;/*规定应该从父元素继承 line-height 属性的值*/
+		  cursor: pointer;/*改变光标，pointer是一只手*/
+		}
+
+		.nav_menuright-item {
+		  display: inline-block;/*设置为行内块元素，就可以设置其宽高啦*/
+		  position: relative;/*生成相对定位的元素，相对于其正常位置进行定位。*/
+		  right:50px;/*设置其相对最左边的距离*/
+		}
+		.nav_menuright-item:hover .nav_boxright {
+		  display: block;
+		}
+	    form.search{
+	    	position: relative;
+	    	float:left;
+	    	left:40px;
+	    	top:15px;
+	    	
+	    }
+	    .sousuo{
+	    	width: 200px;
+	    	height: 45px;
+	    	
+
+ 
+	    }
+	    .tijiao{
+	    	position: relative;
+	    	left:-15px;
+	    	height: 45px;
+
+	    }
+		
+
+.main{width: 876px;height: 1018px;
+      margin: 80px auto 0;
+      background:white;}
+
+
+
+.leftcol{float:left;
+		text-align: center;
+        width:140px;height:668px;
+       background:LavenderBlush ;/*设置背景色*/
+}
+		.leftcol ul li img{
+			width:140px;height:40px;
+			border="0";
+		    padding:5px;
+
+		}
+div.panel,p.flip
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+div.panel
+{
+height:120px;
+display:none;
+}
+
+			.time{
+			  margin: 200px 0px 20px 0px;
+			}
+
+	
+.midcol{
+          float:left;
+          width:736px;height:668px;
+         
+        }
+			h1{
+			    font-size: 30px;/*字体大小*/
+			  	font-weight: bold;/*字体加粗*/
+			  	color: blue;/*字体颜色*/
+			    font-style:italic;/*字体*/
+			   }
+			
+			.detail{
+			  font-size:14px;           /*字体大小*/
+			  color:black;              /*字体颜色*/
+			  text-indent:28px;         /*段落首行缩进*/
+			  text-align:left;           /*段落左对齐*/
+			  word-spacing:25px;        /*文字间距*/
+			  line-height:25px;           /*文字行距*/
+			  font-family:Sans-serif,Arial,Verdana,;/*字体*/
+			  
+			  background-color:lightcyan;/*文本背景色*/
+			}
+
+
+.footer{width: 876px;height: 100px;
+	
+	background: red;
+
+}
+			.make{color: lime}

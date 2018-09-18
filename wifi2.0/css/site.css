@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  overflow: hidden;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  background-attachment:fixed;
+  text-align: center;
+}
+
+p{
+  font-family: Verdana;
+  font-size: 17px;
+  font-weight: 2px;
+}
+
+#contain{
+    width: 350px;
+    background:#eee;
+    border:3px solid #ccc;
+    margin-top: 100px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+div#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  zoom: 1;
+
+  opacity:1;
+  transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+}
+
+.icon-dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 6px;
+    margin: 5px;
+    border: 2px solid;
+    border-radius: 50%;
+    background-clip: content-box;
+    background-color: currentColor;
+}

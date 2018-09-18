@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".yc").hide();
+  });
+  $("#show").click(function(){
+    $(".yc").show();
+  });
+});
+</script>
+
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+
+<style>
+body{
+	background-image: url(beijing.jpg);	
+}
+
+.zz
+{
+	color: #4D4D4D; 
+	font-size: 50px;
+}
+h1.m1
+{
+	color:black;	
+}
+h1.m2
+{
+	color:green;	
+}
+</style>
+
+</head>
+<body>
+<h1 class="m1" style="position:absolute; left:300px;  top:200px;" ><a href="shouye.html">网站首页</a></h1>
+<h1 class="m1" style="position:absolute; left:300px;  top:300px;" ><a href="chide.html">吃の诱惑</a></h1>
+<h1 class="m1" style="position:absolute; left:300px;  top:400px;" ><a href="yingshi.html">影视介绍</a></h1>
+<h1 class="m1" style="position:absolute; left:300px;  top:500px;" ><a href="zuozhe.html">关于作者</a></h1>
+<img  src="bg4.jpg"  width="20"; height="20px" style="position:absolute; left:280px;  top:230px; ">
+<img  src="bg4.jpg"  width="20"; height="20px" style="position:absolute; left:280px;  top:330px; ">
+<img  src="bg4.jpg"  width="20"; height="20px" style="position:absolute; left:280px;  top:430px; ">
+<img  src="bg4.jpg"  width="20"; height="20px" style="position:absolute; left:280px;  top:530px; ">
+<img  src="xixi.gif"   style="position:absolute; width:220px; height:100px;left:670px;  top:30px; ">
+</body>
+<body onload="startTime()">
+<div  id="txt" style="position:absolute;left:215px;  top:720px;font-size: 60px;color:#FF8C00 ;"></div>
+</body>
+
+<h1 class="m2" style="position:absolute; left:1300px; top:100px; ">小游戏</h1>
+<onclick id="show"><img src="stp.jpg" width="80px"; height="40px"; style="position:absolute; left:1200px; top:200px; "></onclick>
+<onclick id="hide"><img src="stt.jpg" width="80px"; height="40px"; style="position:absolute; left:1400px; top:200px; "></onclick>
+<embed src="AimBooster.swf" width="650px"; height="500px"; style="position:absolute; left:1000px; top:300px";></embed>
+
+<img class="yc" src="dog.gif" width="650"; height="500px"; style="position:absolute; left:1000px;  top:300px; border:10px solid #FFA500; ">
+<h1 class="zz" style="position: absolute;left:650px; top:200px;">作者是谁<br><br><br><br>难道你心里<br><br><br><br>还没点数么？</h1>
+</body>
+
+
+</html>

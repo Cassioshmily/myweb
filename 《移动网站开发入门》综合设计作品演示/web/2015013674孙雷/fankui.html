@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>东钱湖风景旅游</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="stylesheet" href="styles/style.css" media="screen" />
+<link rel="stylesheet" href="styles/media-queries.css" />
+<link rel="stylesheet" href="./flex-slider/flexslider.css" type="text/css" media="screen" />
+<link href="styles/prettyPhoto.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="styles/tipsy.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="./scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="./flex-slider/jquery.flexslider-min.js"></script>
+<script src="scripts/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script src="scripts/jquery.tipsy.js" type="text/javascript"></script>
+<script src="scripts/jquery.knob.js" type="text/javascript"></script>
+<script type="text/javascript" src="./scripts/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="./scripts/jquery.smooth-scroll.min.js"></script>
+<script type="text/javascript" src="./scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="./scripts/setup.js"></script>
+
+
+</head>
+<body>
+<div id="wrap"> 
+  <!-- wrapper -->
+  <div id="sidebar"> 
+    <!-- the  sidebar --> 
+    <!-- logo --> 
+    <a href="http://www.mafengwo.cn/poi/248.html" id="logo"> <img src="./images/logo.png" alt="" /></a> 
+    <!-- navigation menu -->
+    <ul id="navigation">
+      <li><a href="index.html" class="active">主页</a></li>
+      <li><a href="lishi.html">历史文化</a></li>
+      <li><a href="tuji.html">图集</a></li>
+      <li><a href="fankui.html">反馈</a></li>
+    </ul>
+  </div>
+  <div id="container"> 
+    <!-- page container -->
+    
+    <div class="page" id="contact"> 
+      <!-- page contact -->
+      <h3 class="page_title"> 联系我们</h3>
+      <div class="page_content">
+        <fieldset id="contact_form">
+          <div id="msgs"> </div>
+          <form id="cform" name="cform" method="post" action="">
+            <input type="text" id="name" name="name" value="姓名*" onFocus="if(this.value == 'Full Name*') this.value = ''"
+                            onblur="if(this.value == '') this.value = '姓名'" />
+            <input type="text" id="email" name="email" value="电子邮箱" onFocus="if(this.value == 'Email Address*') this.value = ''"
+                            onblur="if(this.value == '') this.value = '电子邮箱*'" />
+            <input type="text" id="subject" name="subject" value="满意之处" onFocus="if(this.value == 'Subject*') this.value = ''"
+                            onblur="if(this.value == '') this.value = '满意之处'" />
+            <textarea id="msg" name="message" onFocus="if(this.value == '满意之处*') this.value = ''"
+                            onblur="if(this.value == '') this.value = 'Your Message*'">你的意见</textarea>
+            <button id="submit" class="button"> 反馈信息</button>
+          </form>
+        </fieldset>
+        <div class="clear"> </div>
+       
+      </div>
+    </div>
+    <div class="footer">
+      <p> &copy; 2017 . 网页制作</p>
+      <p> 电子151 孙雷</p>
+    </div>
+  </div>
+</div>
+<a class="gotop" href="#top">Top</a>
+</body>
+</html>

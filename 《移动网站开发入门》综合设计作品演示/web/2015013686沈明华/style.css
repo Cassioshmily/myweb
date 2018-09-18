@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, th, td
+{margin: 0; padding: 0; border: 0; font-family:"微软雅黑";}
+a{ text-decoration:none; color:white;}
+ul,li{ list-style:none;}
+.clearfix{ clear:both;}
+
+.banner{ width:980px; margin:0 auto;}
+.nav-box{ width:980px;height:50px; background-color:#302825; margin:0 auto;}
+.nav li{ float:left; line-height:50px;padding:0 40px;}
+.nav li:hover{  background-color:#990033;}
+.shouye{ background-color:#990033;}
+.beijing{width:980px;background-color:#CCCCCC; margin:0 auto;}
+.nr{ width:650px;padding:30px 5px;float:left;}
+.nr img{float:left; width:280px; height:370px;padding: 10px;}
+.nr p{width:620px; line-height:30px; text-align:center;}
+ h2{ text-align:center; border-bottom:solid 1px black;padding:20px 0;}
+.zp{width:300px;padding:30px 10px;float:left;}
+.zp span{width:140px; float:left;padding:10px 5px; text-align:center;}
+.yejiao{width:980px; height:40px;background-color:#302825; line-height:40px; margin:0 auto; text-align:center;color:#666666; font-size:14px;}
+
+.jianjie{ background-color:#990033;}
+.jieshao{ width:870px; margin:0 auto;padding:40px; position:relative;}
+.jieshao p{ line-height:30px;}
+.jieshao img { position:absolute;top:50px;right:50px;}
+
+.xiezhen{ background-color:#990033;}
+.tu{width:900px; margin:0 auto;padding:50px;}
+.tu img {padding:5px; border:solid 1px black;}
+
+.pingjia{ background-color:#990033;}
+.pj{width:830px; margin:0 auto;padding:40px;}
+.pj img{padding:5px;}
+.pj p{width:650px; line-height:30px; text-align:center; margin:0 auto;}
+
+.liuyan{ background-color:#990033;}
+.kuang{ width:220px; height:25px;margin:20px;}
+.kuang1{margin:20px;}
+#media{ width:220px; height:100px;margin:20px;}
+.anniu{ width:60px; height:30px; background-color:#CC9933;margin:10px;}
+form{width:340px;padding-top:60px;padding-bottom:60px; margin:0 auto;}

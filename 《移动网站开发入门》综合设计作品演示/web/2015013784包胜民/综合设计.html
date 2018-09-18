@@ -1,0 +1,98 @@
+<meta charset="UTF-8">
+<html>
+<head>
+<style type="text/css">
+header {
+   background-image:url(1.jpg); background-size:cover;
+    text-align:center;
+    padding:10px;   
+}
+nav {
+    line-height:50px;
+    background-color: #DEB887;
+    height:400px;
+    width:100px;
+    float:left;
+    padding:10px; text-align:center;       
+}
+section {
+    width:520px;
+     float:left;
+    padding:10px;    
+}
+
+      a:link { color: blue;}
+      a:visited{ color:red;}
+      a:active{ color: blue;}
+      a:hover {letter-spacing: 5px;color:blue;} 
+</style>
+</head>
+
+<body>
+
+<header>
+<h1><p style="color: black;">我的大学</h1>
+</header>
+
+<nav>
+<a href="综合设计.html">首页</a>
+<br>
+<a href="https://www.expoon.com/25670/"target="_blank">全景展示</a>
+<br>
+<a href="万里概况.html">万里概况</a>
+<br>
+<a href="http://moodle.zwu.edu.cn/login/index.php"target="_blank">网络课堂</a>
+<br>
+
+</nav>
+
+<section>
+<h2>浙江万里学院<img src="2.jpg" width="50" height="50" align="middle"></h2>
+<hr />       <!--这是水平线>-->
+
+<p>
+浙江万里学院（Zhejiang Wanli University）位于浙江宁波，是一所经中华人民共和国教育部批准设立的省属普通高等院校、硕士学位授予单位，由浙江省万里教育集团为主举办，试行民办学校运行机制，是公办院校进行管理模式和运行机制改革的新型高校。 
+</p>
+
+<p>
+<br />  浙江万里学院共有钱湖、回龙两个校区，占地1400余亩，建筑面积65万平方米，实验设备总值2亿余元，下设10个二级学院，开设有43个本科专业，有2个工程硕士授权领域，有专任教师1000余名，全日制在校本科生、研究生、留学生等2万余名。
+</p>
+<p>学号:<input type="学号" > <br> 
+<br />密码:<input type="密码" > 
+<br><button type="button" onclick="alert('登录成功')" >登录</button>
+
+</p>
+</section>
+
+
+<img src="3.jpg" width="300" height="300" align="middle"></h2>
+
+
+
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="txt"></div>
+</body>
+</html>

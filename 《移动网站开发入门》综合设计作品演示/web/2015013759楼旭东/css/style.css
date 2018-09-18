@@ -1,0 +1,17 @@
+/* CSS Document */
+
+.daohang a{ display:block; height:64px; text-align:center; line-height:64px; background:#e4f4c5; margin:5px 2px; color:#000; text-decoration:none;} 
+.daohang a:hover,.daohang a.hover{ background:#eeff99;}
+.nr{ background:url(../images/woderizhi_04.jpg) no-repeat; padding:0px 20px;}
+.nr h2{ font-size:25px; margin:30px; text-align:center;}
+p{ font-size:14px;}
+.tit{ padding-left:550px; color:#fff; font-weight:bold; background:url(../images/woderizhi_02.jpg) no-repeat;}
+.bd{ margin:60px 30px;}
+.bd tr td{ padding:10px 10px;}
+.xc{ margin:50px 10px;} 
+.xc tr td{ text-align:center;}
+.xc tr td img{ display:block; margin:0px auto 10px;}
+.nr2{ background:url(../images/woderizhi_04.jpg) no-repeat; padding:50px 5px;}
+img{ border:none;}
+a{ color:#000;}
+.sh{background:url(../images/index_14.jpg) no-repeat; padding:20px 80px 10px; font-size:12px; line-height:22px;}

@@ -1,0 +1,7 @@
+
+ p {color:SeaShell ;text-indent:2em;}
+ a:link {color:Cornsilk;}		/* 未被访问的链接 */
+ a:visited {color:LightBlue;}	/* 已被访问的链接 */
+ a:hover {color:LightSlateGray;}	/* 鼠标指针移动到链接上 */
+ a:active {color:Khaki;}	/* 正在被点击的链接 */
+ body {font-family: sans-serif;}

@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<script type="text/javascript" src="inc/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="inc/jquery-ui-1.8.8.custom.min.js"></script>
+<script type="text/javascript" src="inc/treddi.js"></script>
+<link href="inc/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<script>
+$(document).ready(function(){
+		$('#ddd').dddgallery({		
+		
+			p_width: 620,
+			min_width: 150,
+			max_width: 300,
+			porp_height: 0,
+			min_opacity: 0.2,
+			livel_range: 20	
+			});
+});
+</script>
+
+    <div id="content">
+	
+<br><br><br>
+
+<div id="ddd">
+    <div class="box box_principale">
+        <img  src="img/img1_m.jpg" />
+    </div>
+    <div class="box">
+        <img  src="img/img2_m.jpg" />
+    </div>
+    <div class="box">
+        <img  src="img/img3_m.jpg" />
+    </div>
+    <div class="box">
+        <img  src="img/img4_m.jpg" />
+    </div>
+    <div class="box">
+        <img  src="img/img5_m.jpg" />
+    </div>
+    <div class="box">
+        <img  src="img/img6_m.jpg" />
+    </div>
+    <div class="box">
+        <img  src="img/img7_m.jpg" />
+    </div>
+</div>
+
+</div>
+
+
+	</div>
+
+</body>
+</html>

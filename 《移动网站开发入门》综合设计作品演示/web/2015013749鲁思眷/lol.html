@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>英雄联盟</title>
+	<link rel="stylesheet" type="text/css"  href="style/style.css" />  	
+	<style type="text/css">
+	<!--
+	h1{
+		font-size: 80px;
+		font-family: "隶书";
+		font-weight: bold;
+		color: red;
+	  }
+
+	li {list-style : url(xl.jpg) square inside}
+  
+	a:link,a:visited
+	{
+	display:block;
+	font-weight:bold;
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	background-color:#98bf21;
+	width:120px;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	}
+	a:hover,a:active
+	{
+	background-color:#7A991A;
+	}
+	-->
+
+    </style>	
+</head>
+
+
+<body background="bj.jpg" 
+	  style=" background-repeat:no-repeat ;
+	  background-size:100% 100%;
+	  background-attachment: fixed;"
+	  text="#68228B" onload="setInterval('clock()',1000)">
+
+	<header>
+	    <h1 align="center"; >英 雄 联 盟 </h1> 
+	</header>
+   <br>
+
+
+   <br>
+   <a onclick="history.forward()">前进</a>
+   <a onclick="history.back()">后退</a> <br> <br>
+   
+ 
+  		欢迎您登录：
+  	<form name="loginForm">
+    	输入帐号：<input name="account" id="acc"  type="text"><br>
+    	输入密码：<input name="password" type="password"><br>
+    	<input type="button" onclick="validate()" value="登录">
+  </form>
+    
+
+     <ul>
+	 <font color=black><p ><li>《英雄联盟》(简称LOL)是由美国拳头游戏(Riot Games)开发、中国大陆地区腾讯游戏代理运营的英雄对战MOBA竞技网游。</li></p></font>
+	 <font color=black><p ><li> 游戏拥有数百个英雄，并拥有排位系统、天赋系统、符文系统等特色养成系统。</li></p></font>
+	 <font color=black><p ><li>《英雄联盟》还致力于推动全球电子竞技的发展，除了联动各赛区发展职业联赛、打造电竞体系之外，每年还会举办“季中冠军赛”“全球总决赛”“All Star全明星赛”三大世界级赛事，获得了亿万玩家的喜爱，形成了自己独有的电子竞技文化。</li></p></font>
+     </ul>
+
+
+	<a href="热门英雄.html">热门英雄</a>
+	<br>
+	<a href="赛事资料.html">赛事资料</a>
+	<br>					
+	<a href="明星选手.html">明星选手</a>
+    <br>
+
+	<embed src="lolzg.mp3" hidden="true" autostart="true" loop="true">
+	
+
+	<script type="text/javascript">
+
+    	function validate(){
+      	account=document.loginForm.account.value;
+      	password=document.loginForm.password.value;
+      	if(account==""){
+        alert("帐号不能为空");
+        document.getElementById("acc").value="2";
+        document.loginForm.account.focus(); return; }
+      	document.loginForm.submit(); }
+
+       
+  	</script>
+										
+</body>
+</html>

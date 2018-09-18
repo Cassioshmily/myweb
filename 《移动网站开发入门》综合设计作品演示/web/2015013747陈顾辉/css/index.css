@@ -1,0 +1,60 @@
+﻿@charset "utf-8";
+/* CSS Document */ 
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+*{margin:0;padding:0;border:0;}
+body {	font-family: "宋体";font-size: 12px;color:#000000;line-height: 20px;text-align:left}
+td,th {font-family: "宋体";font-size: 12px;color: #000000;}
+a {color: #000000;}
+A:link {TEXT-DECORATION: none;}
+A:visited {TEXT-DECORATION: none;}   
+A:hover {TEXT-DECORATION: underline;} 
+ul,li{list-style-type:none;} 
+  
+.clearit{clear:both;}
+.page{width:1003px; margin:0 auto;}
+
+
+.daohang{width:1003px; height:42px; margin:0 auto; overflow:hidden; background:url(../images/daohang.jpg) repeat-x;}
+.daohang p{width:140px; line-height:42px; display:block; float:left; text-align:center; font-size:14px; font-weight:bold; }
+.daohang p a{color:#345479;}
+
+.content{width:1003px; margin:0 auto; background:#c2cdda; padding:20px 0 0;} 
+
+.zuo{width:220px; float:left; margin-left:10px; display:inline; }
+.fangshi{width:220px; border:1px solid #ffffff; margin-top:10px;background:#345479; }
+.fangshi h1{font-size:14px; padding:0 10px; font-weight:bold; line-height:26px; line-height:26px; border-bottom:1px solid #ffffff; color:#ffffff;}
+.fangshi p{text-align:left; padding:0 10px; line-height:24px;color:#ffffff;}
+
+.you{width:750px; float:left; margin-left:10px; display:inline;}
+.jieshao{width:748px;border:1px solid #ffffff; background:#345479; margin-bottom:10px; }
+.jieshao h1{font-size:14px; padding:0 10px; font-weight:bold; line-height:28px; line-height:28px; background:#345479;border-bottom:1px solid #ffffff; color:#ffffff;}
+.jieshao p{text-align:left; padding:10px; line-height:24px;color:#ffffff;}
+
+.jieshaoB{width:748px;border:1px solid #ffffff; background:#345479; margin-bottom:10px; }
+.jieshaoB h1{font-size:14px; padding:0 10px; font-weight:bold; line-height:28px; line-height:28px; background:#345479;border-bottom:1px solid #ffffff; color:#ffffff;}
+.jieshaoB p{padding:10px 0;}
+.jieshaoB img{width:200px; margin-right:10px; padding:1px; border:1px solid #FFFF00; background:#FFFFFF;}
+.foot{width:1003px; margin:0 auto; padding-top:50px; background:url(../images/foot.jpg) repeat-x top; padding-bottom:50px;}
+.foot p{text-align:center; line-height:30px; color:#345479;}
+
+
+.you h2{font-size:14px; font-weight:bold; text-align:center; line-height:30px; border-bottom:1px solid #FFFF00; color:#000000;}
+.neirong{padding:20px; line-height:24px; color:#000000;}
+
+.zhanshi{padding-bottom:20px; overflow:hidden;}
+.zhanshi img{width:160px; display:block; float:left; margin-left:10px; display:inline;}
+
+.messageB{width:600px; padding:10px 0; overflow:hidden; text-align:left; line-height:24px;}
+.messageB ul li{line-height:24px; margin-top:16px; list-style:none; padding:0;border:0;}
+.messageB ul li span{vertical-align:middle; padding-right:12px;}
+.messageB ul li .message_in{width:300px; height:22px; border:1px solid #999999;vertical-align:middle;line-height:22px; padding:0;}
+.messageB ul li .message_te{width:500px; height:90px; border:1px solid #999999;vertical-align:middle;line-height:18px; padding:0;}
+.messageB ul li .message_btn{width:64px; height:20px;  padding:0; line-height:20px; background:url(../images/btn.gif) no-repeat; color:#FFFFFF; font-weight:bold; cursor:hand;}
+
+
+
+
+
+
+
+

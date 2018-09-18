@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>30new</title> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="auther" content="迟来的浅唱低吟">    
+		<link href="try5.css" rel="stylesheet" type="text/css" /><!--添加css样式表-->
+		<script type="text/javascript" src="jquery-3.2.1.js"></script><!--添加jquery库-->
+
+		<script type="text/javascript">
+
+		function changeStyle()
+		{
+
+			var time=new Date().getHours();
+			if (time<20)
+		  	{
+		  	document.body.style.backgroundColor="pink";
+		  	}
+			else
+		  	{
+		    document.body.style.backgroundColor="black";
+		  	}
+
+		}
+		
+		function form_onsubmit()
+		{
+			var fname = document.getElementById("name").value;
+			var fpassword = document.getElementById("password").value;
+			
+			
+			if (fname=="")
+				{
+					alert("用户名不能为空");
+				    return false;
+				}
+
+			if (fpassword==""|| isNaN(fpassword))
+				{
+					alert("密码错误");
+				    return false;
+				}
+		}
+			
+			
+
+		
+
+		</script>
+</head>
+
+ <body>
+	  <div class="fixednav">
+	    <ul class="nav_menuleft">
+	  		 <li class="nav_menuleft-item"><a href="http://www.baidu.com/"  target="_blank">
+	  		 		<img  style="width:40px;height:20px;float: left;border="0"; src="navflower.jpg" /></a>
+             </li>
+	  		 <li  class="nav_menuleft-item"><a href="7new.html" target="_blank">你</a>
+	  		 	<ul class="nav_boxleft">
+	  		 		<li class="nav_boxleft-element">喜</li>
+	  		 		<li class="nav_boxleft-element">欢</li>
+	  		 	</ul>
+	  		 </li>
+	  		 <li class="nav_menuleft-item"><a href="http://weibo.com/login/" target="_blank">喜</a>
+				<ul class="nav_boxleft">
+	  		 		<li class="nav_boxleft-element">欢</li>
+	  		 		<li class="nav_boxleft-element">你</li>
+	  		 	</ul>
+	  		 </li>
+	  		 <li class="nav_menuleft-item"><a href="http://www.qq.com/" target="_blank">欢</a>
+				<ul class="nav_boxleft">
+	  		 		<li class="nav_boxleft-element">喜</li>
+	  		 		<li class="nav_boxleft-element">你</li>
+	  		 	</ul>
+	  		 </li>
+	  		 <li class="nav_menuleft-item"><a href="https://www.zhihu.com/" target="_blank">吗</a>
+				<ul class="nav_boxleft">
+	  		 		<li class="nav_boxleft-element">？</li>
+	  		 		<li class="nav_boxleft-element">？</li>
+	  		 	</ul>
+	  		 
+
+	  		 </li>
+		  </ul>
+		  <form  class="search">
+	  		    <span class="sousuo"><input type="text" placeholder="搜索"></span>
+	  		    <span  class="tijiao"><input type="submit"></span>
+	     </form>
+		  <ul class="nav_menuright">
+		  		<li class="nav_menuright-item"><a href="https://passport.baidu.com/v2/?login&tpl=mn&u=https%3A%2F%2Fwww.baidu.com%2F">登录</a></li>
+		  		<li class="nav_menuright-item"><a href="https://passport.baidu.com/v2/?reg&tt=1508554739142&gid=B89B350-4077-4E7E-AC9D-A9CBDE6DFDB1&tpl=mn&u=https%3A%2F%2Fwww.baidu.com%2F"/>注册</li>
+		  </ul>
+	 </div>
+<div class="main">
+	<div clas="topcol">
+  	  	<a  id="web" href="http://www.baidu.com/" >
+	  		 		<img  style="width:875px;height:250px;float:top;border="0"; padding:20px auto; src="30new.jpg"  /></a>
+	  		
+  	  	 </div>
+
+	<div class="leftcol">
+		
+			<ul>推荐作者
+			 	<li ><a href="http://www.jianshu.com/u/4b9ff86a7af4?utm_source=desktop&utm_medium=index-users" target="_blank">  sir电影</a></li>
+			 	<li ><a href="http://www.jianshu.com/u/9e9a8cb76fd9?utm_source=desktop&utm_medium=index-users" target="_blank">如鱼尸</a></li>
+			 	<li ><a href="http://www.jianshu.com/u/af9d9c4db83d?utm_source=desktop&utm_medium=index-users" target="_blank"> 凉子菇娘</a></li>
+			 	<li ><a href="http://www.jianshu.com/u/addcee2f9c78?utm_source=desktop&utm_medium=index-users" target="_blank">没文化的野狐狸</a></li>
+			</ul>
+			<p class="flip">查看全部</p>
+              <div class="panel">
+                <ul >
+				<li ><a href="http://www.jianshu.com/u/4b9ff86a7af4?utm_source=desktop&utm_medium=index-users" target="_blank">  sir电影</a></li>
+			 	<li ><a href="http://www.jianshu.com/u/9e9a8cb76fd9?utm_source=desktop&utm_medium=index-users" target="_blank">如鱼尸</a></li>
+			 	<li ><a href="http://www.jianshu.com/u/af9d9c4db83d?utm_source=desktop&utm_medium=index-users" target="_blank"> 凉子菇娘</a></li>
+			 	<li ><a href="http://www.jianshu.com/u/addcee2f9c78?utm_source=desktop&utm_medium=index-users" target="_blank">没文化的野狐狸</a></li>
+			</ul>
+			<script type="text/javascript"> 
+				$(document).ready(function(){
+				$(".flip").click(function(){
+				    $(".panel").slideToggle("slow");
+				  });
+				});
+				</script>
+            </div>
+      	</div>
+      
+      
+    <div class="midcol" >
+    			<p><h1 > 我想推荐九首歌，却又害怕你听懂它</h1></p>
+	     		<p><h3 style="font-size: 20px;" > 作者：观二清</h3></p>
+	     		<p class="detail"> &nbsp李宗盛说，“人这辈子，最害怕突然把某一首歌听懂了。”﻿﻿歌太伤，一不小心，就包含了全部的人生。</p>
+	     		<ul>
+	     		<li>1、《山丘》-李宗盛
+	     	    <p class="detail" >
+	        
+	           有网友评论说，等你把这首歌听哭了，你就长大了。﻿﻿</br>
+
+				&nbsp以前听着，忍不住切掉，不懂这中年男音唱着这首跑调的歌到底有哪里吸引人的地方。﻿﻿</br>
+
+				&nbsp直到长大，越走越远，发现好友成路人，理想不敢随便说，忙忙碌碌，回头一看，时间过了一大半，这时候，听着这首歌，才突然似懂非懂，原来跑调的声音里，早已注入这些情感。﻿﻿</br>
+
+				&nbsp那个追着理想的年轻人，跋山涉水，在现实的泥潭里历经风霜，原本以为越过了山丘已是成功，然而青春已逝，白了头，身边的人，早已不在。</br>
+				</p>
+	     		</li>
+	     		<li>2、《What are words》-Chris Medina﻿﻿
+	     	    <p class="detail" >
+	        
+	    		初听前奏，透露着深情，似乎有种魔力，让人忍不住听完；而背后的故事，更为情深。</br>
+
+				&nbsp2009年10月2日，订婚后两年，那个美丽的女孩因为车祸事故，脑部受到重创，康复后智力只有2岁，生活完全不能够自理。但Chris不离不弃。 后来Chris参加了美国偶像，为的就是赚到更多的钱让未婚妻受到更好的治疗过上更好的生活。虽然最后还是止步于全国24强，但这首歌的意义，早已超出所有的排名奖项。正如他遵守着自己的承诺，不管爱的人现在如何，她永远都是他的天使。</br>
+
+				&nbsp于是他唱到：﻿﻿</br>
+
+				&nbspAnywhere you are, I am near﻿﻿﻿</br>
+
+                &nbsp（不管你在哪，我都会与你同在﻿）﻿﻿</br>
+
+                &nbspAAnywhere you go, I'll be there﻿﻿﻿</br>
+
+                &nbsp（不管你去哪，我都将与你同行﻿）</br>
+
+                </p>
+	     		</li>
+	     		</ul>
+
+
+	     
+	     		
+	     		
+	      
+	            <a href="http://www.jianshu.com/p/fe44de398e35"  >查看更多>></a>
+
+	</div>	   
+		 
+	
+	
+	
+		
+		
+
+   </div>
+  </body>
+  </html>
+

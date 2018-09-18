@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>7new</title> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="auther" content="迟来的浅唱低吟">    
+		<link href="try5.css" rel="stylesheet" type="text/css" /><!--添加css样式表-->
+		<script type="text/javascript" src="jquery-3.2.1.js"></script><!--添加jquery库-->
+
+		<script type="text/javascript">
+
+		function changeStyle()
+		{
+
+			var time=new Date().getHours();
+			if (time<20)
+		  	{
+		  	document.body.style.backgroundColor="pink";
+		  	}
+			else
+		  	{
+		    document.body.style.backgroundColor="black";
+		  	}
+
+		}
+		
+		function form_onsubmit()
+		{
+			var fname = document.getElementById("name").value;
+			var fpassword = document.getElementById("password").value;
+			
+			
+			if (fname=="")
+				{
+					alert("用户名不能为空");
+				    return false;
+				}
+
+			if (fpassword==""|| isNaN(fpassword))
+				{
+					alert("密码错误");
+				    return false;
+				}
+		}
+			
+			
+
+		
+
+		</script>
+</head>
+
+ <body>
+	  <div class="fixednav">
+	    <ul class="nav_menuleft">
+	  		 <li class="nav_menuleft-item"><a href="http://www.baidu.com/"  target="_blank">
+	  		 		<img  style="width:40px;height:20px;float: left;border="0"; src="navflower.jpg" /></a>
+             </li>
+	  		 <li  class="nav_menuleft-item"><a href="7new.html" target="_blank">你</a>
+	  		 	<ul class="nav_boxleft">
+	  		 		<li class="nav_boxleft-element">喜</li>
+	  		 		<li class="nav_boxleft-element">欢</li>
+	  		 	</ul>
+	  		 </li>
+	  		 <li class="nav_menuleft-item"><a href="http://weibo.com/login/" target="_blank">喜</a>
+				<ul class="nav_boxleft">
+	  		 		<li class="nav_boxleft-element">欢</li>
+	  		 		<li class="nav_boxleft-element">你</li>
+	  		 	</ul>
+	  		 </li>
+	  		 <li class="nav_menuleft-item"><a href="http://www.qq.com/" target="_blank">欢</a>
+				<ul class="nav_boxleft">
+	  		 		<li class="nav_boxleft-element">喜</li>
+	  		 		<li class="nav_boxleft-element">你</li>
+	  		 	</ul>
+	  		 </li>
+	  		 <li class="nav_menuleft-item"><a href="https://www.zhihu.com/" target="_blank">吗</a>
+				<ul class="nav_boxleft">
+	  		 		<li class="nav_boxleft-element">？</li>
+	  		 		<li class="nav_boxleft-element">？</li>
+	  		 	</ul>
+	  		 
+
+	  		 </li>
+		  </ul>
+		  <form  class="search">
+	  		    <span class="sousuo"><input type="text" placeholder="搜索"></span>
+	  		    <span  class="tijiao"><input type="submit"></span>
+	     </form>
+		  <ul class="nav_menuright">
+		  		<li class="nav_menuright-item"><a href="https://passport.baidu.com/v2/?login&tpl=mn&u=https%3A%2F%2Fwww.baidu.com%2F">登录</a></li>
+		  		<li class="nav_menuright-item"><a href="https://passport.baidu.com/v2/?reg&tt=1508554739142&gid=B89B350-4077-4E7E-AC9D-A9CBDE6DFDB1&tpl=mn&u=https%3A%2F%2Fwww.baidu.com%2F"/>注册</li>
+		  </ul>
+	 </div>
+<div class="main">
+	<div clas="topcol">
+  	  	<a  id="web" href="http://www.baidu.com/" >
+	  		 		<img  style="width:875px;height:250px;float:top;border="0"; padding:20px auto; src="7new.jpg"  /></a>
+	  		
+  	  	 </div>
+
+	 <div class="leftcol">
+		
+			<ul>推荐作者
+			 	<li ><a href="http://www.jianshu.com/u/4b9ff86a7af4?utm_source=desktop&utm_medium=index-users" target="_blank">  sir电影</a></li>
+			 	<li ><a href="http://www.jianshu.com/u/9e9a8cb76fd9?utm_source=desktop&utm_medium=index-users" target="_blank">如鱼尸</a></li>
+			 	<li ><a href="http://www.jianshu.com/u/af9d9c4db83d?utm_source=desktop&utm_medium=index-users" target="_blank"> 凉子菇娘</a></li>
+			 	<li ><a href="http://www.jianshu.com/u/addcee2f9c78?utm_source=desktop&utm_medium=index-users" target="_blank">没文化的野狐狸</a></li>
+			</ul>
+			<p class="flip">查看全部</p>
+              <div class="panel">
+                <ul >
+				<li ><a href="http://www.jianshu.com/u/4b9ff86a7af4?utm_source=desktop&utm_medium=index-users" target="_blank">  sir电影</a></li>
+			 	<li ><a href="http://www.jianshu.com/u/9e9a8cb76fd9?utm_source=desktop&utm_medium=index-users" target="_blank">如鱼尸</a></li>
+			 	<li ><a href="http://www.jianshu.com/u/af9d9c4db83d?utm_source=desktop&utm_medium=index-users" target="_blank"> 凉子菇娘</a></li>
+			 	<li ><a href="http://www.jianshu.com/u/addcee2f9c78?utm_source=desktop&utm_medium=index-users" target="_blank">没文化的野狐狸</a></li>
+			</ul>
+			<script type="text/javascript"> 
+				$(document).ready(function(){
+				$(".flip").click(function(){
+				    $(".panel").slideToggle("slow");
+				  });
+				});
+				</script>
+            </div>
+      	</div>
+      
+      
+    <div class="midcol" >
+    			<p><h1 > 如果你喜欢一个人，说些什么话让对方也喜欢你呢</h1></p>
+	     		<p><h3 style="font-size: 20px;" > 作者：道长是名思维贩子</h3></p>
+	     		<ul>
+	     		<li>01
+	     		<p class="detail" >
+	            你现在有没有喜欢一个人？</br>
+	            &nbsp当然不一定都是朝思暮想。可能只是一些微小的感受，你一看到TA的照片，就感到温暖；偶尔能聊上几句，就顿觉心安；见面时，心底欢喜。</br>
+	             &nbsp有一句话这么说，“无论再风马牛不相及的事，你也会在脑海里拐几道弯，逆着顺着也想到她哪儿去。”大概就是这样的感受吧。</br>
+	             也不一定只是爱情，比如你喜欢村上春树或王小波；或者音乐圈里，那个曾经青春的信仰；或是你身边，你不怎么和他说话，但觉得很厉害的人。</br>
+
+                 &nbsp不管怎样，如果你喜欢一个人，总是想去见见他，总是会关注他所喜欢的东西，你也希望他喜欢你。</br>
+                 
+                 &nbsp你为什么，会喜欢一个人呢？</br>
+	     		</p>
+	     		</li>
+	     		<li>02
+	     		<p class="detail">
+	             &nbsp很多人觉得，世界上唯一不能解释为什么的，就是为什么会喜欢一个人。</br>
+
+				 &nbsp但在心理学中，一切问题都能找到根源，“喜欢”实际是指，“依恋行为系统”（Attachment behavior system）。</br>
+
+
+
+				 &nbsp之所以称为系统，它是由“安全感缺失-产生情绪-对象投射”整个系列过程产生的：</br>
+
+				 &nbsp安全感缺失：比如你因为家庭带来的自卑，总是同学前不太自信，逐渐形成了社交弱势。</br>
+
+					 &nbsp产生情绪：这事引发了你体内皮质醇的堆积，引发持续的焦虑情绪。</br>
+
+					 &nbsp对象投射：同桌看你不开心，愿意陪你聊天，让你找到了安全感，逐渐引发“依恋”的可能。</br>
+
+				 &nbsp所以，很多初恋都是离自己很近的人，同桌、教室前后桌、邻居等。这就是那种因关系紧密，别人对你好而产生的喜欢，我们暂且称为“依恋系统A”。</br>
+
+
+	     		</p> 
+	     		
+	     		
+	      
+	            <a href="http://www.jianshu.com/p/373d67f7cbce"  >查看更多>></a>
+
+	</div>	   
+		 
+	
+	
+	
+		
+		
+
+   </div>
+  </body>
+  </html>
+

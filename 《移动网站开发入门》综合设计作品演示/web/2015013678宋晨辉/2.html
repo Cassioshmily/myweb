@@ -1,0 +1,197 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<html>
+<title>吃货世界</title>
+<head>
+
+<style type="text/css">
+body {
+	background-image: url(1111.jpg);
+}
+#nav ul{list-style:none;}
+#nav ul li{float:left;}
+#nav li a{padding:7px 10px;width:50px; height:50px;}
+
+<!--
+*{margin:0;padding:0;border:0;}
+body {
+ font-family:arial, 楷体, serif;
+
+        font-size:20px;font-weight:bold;
+}
+#nav {
+  line-height: 24px;  list-style-type: none; background:#666;
+  
+}
+#nav a {
+ display: block;strong; width: 80px; text-align:center;
+}
+#nav a:link  {
+ color:#666; text-decoration:none;
+}
+#nav a:visited  {
+ color:#666;text-decoration:none;
+}
+#nav a:hover  {
+ color:#FFF;text-decoration:none;font-weight:bold;
+}
+#nav li {
+ float: left; width: 100px; background:#960;
+}
+#nav li a:hover{
+ background:#C66;
+}
+#nav li ul {
+ line-height: 27px;  list-style-type: none;text-align:left;
+ left: -999em; width: 180px; position: absolute;
+}
+#nav li ul li{
+ float: left; width: 180px;
+ background: #F6F6F6;
+}
+#nav li ul a{
+ display: block; width: 180px;w\idth: 156px;text-align:left;padding-left:24px;
+}
+#nav li ul a:link  {
+ color:#666; text-decoration:none;
+}
+#nav li ul a:visited  {
+ color:#666;text-decoration:none;
+}
+#nav li ul a:hover  {
+ color:#F3F3F3;text-decoration:none;font-weight:normal;
+ background:#C00;
+}
+#nav li:hover ul {
+ left: auto;
+}
+#nav li.sfhover ul {
+ left: auto;
+}
+#content {
+ clear: left;
+}
+#time1{font-size:100px;}
+-->
+#zt{font-size:150px;
+font-style:italic;
+color:#800000;}
+#dy{float:right;}
+</style>
+
+
+</head>
+
+<ul id="nav">
+<li><a href="2.html">
+  
+  吃货!</a></li>
+<li><a href="#">特色小吃</a>
+ <ul>
+ <li><a href="3.html">广东小吃簸箕炊</a></li>
+ <li><a href="4.html">重庆小吃火腿鲜肉包子</a></li>
+ <li><a href="5.html">北京小吃炸肉火烧</a></li>
+ <li><a href="6.html">湖南小吃糯米鸡</a></li>
+ <li><a href="7.html">陕西小吃户县辣子疙</a></li>
+ </ul>
+</li>
+<li><a href="#">烘焙食谱</a>
+ <ul>
+ <li><a href="8.html">摩卡巧克力杏仁饼</a></li>
+ <li><a href="9.html">香腐虾肉饼</a></li>
+ <li><a href="10.html">煎烹金钱虾饼</a></li>
+ <li><a href="11.html">台湾手抓饼</a></li>
+
+ </ul>
+</li>
+<li><a href="#">西餐菜谱</a>
+ <ul>
+ <li><a href="12.html">寿司卷</a></li>
+ <li><a href="13.html">金黄沙棘日本豆腐</a></li>
+ <li><a href="14.html">德式烤牛排</a></li>
+ <li><a href="15.html">西式虾仁汤</a></li>
+  <li><a href="16.html">韩式烤肉锅</a></li>
+ </ul>
+</li>
+<li><a href="#">饮食常识</a>
+ <ul>
+ <li><a href="17.html">天津狗不理包子</a></li>
+ <li><a href="18.html">北京烤鸭</a></li>
+ <li><a href="19.html">臭豆腐的来历</a></li>
+ <li><a href="20.html">粽子起源</a></li>
+ </ul>
+</li>
+
+</li>
+</ul>
+<div id="time1" style="float:right;">
+<h1 style="float:right;">北京时间</h1>
+</div>
+<div id="img" style="position: absolute;visibility :hidden;padding:0px;" onmouseover="clearInterval(interval)" onmouseout="interval = setInterval('changePos()', delay)" align="middle">
+<span style="CURSOR:hand;color:red;font-weight:bold;font-align:center;font-size:12px;padding-left:0px;" onclick="clearInterval(interval);fdck.style.visibility = 'hidden';img.style.visibility = 'hidden';">隐藏</span>
+<div id="fdck" style="width:100%; height:100%; font-align:center; visibility:visible;border：0px; background-color: no">
+<iframe width=280   height=180   src="21.html"  frameborder=no scrolling="no">
+</iframe>
+</div>
+</div>
+<script language=javascript>            
+setInterval("document.getElementById('time1').innerHTML = new Date().toLocaleString();", 1000);
+var xPos = 2000;
+var yPos = document.body.clientHeight;
+var step = 1;
+var delay = 30;
+var height = 0;
+var Hoffset = 0;
+var Woffset = 0;
+var yon = 0;
+var xon = 0;
+var pause = true;
+var interval;
+img.style.top = yPos;
+function changePos() {
+width = document.body.clientWidth;
+height = document.body.clientHeight;
+Hoffset = img.offsetHeight;
+Woffset = img.offsetWidth;
+img.style.left = xPos + document.body.scrollLeft;
+img.style.top = yPos + document.body.scrollTop;
+if (yon) {yPos = yPos + step;}
+else {yPos = yPos - step;}
+if (yPos < 0) {yon = 1;yPos = 0;}
+if (yPos >= (height - Hoffset)) {yon = 0;
+yPos = (height - Hoffset);}
+if (xon) {xPos = xPos + step;}
+else {xPos = xPos - step;}
+if (xPos < 0) {xon = 1;xPos = 0;}
+if (xPos >= (width - Woffset)) {xon = 0;xPos = (width - Woffset);}
+}
+function start() {
+img.style.visibility = "visible";
+interval = setInterval('changePos()', delay);}
+start();
+</script>
+<br><br><br><br><br><br><br><br>
+<br>
+<h3 id="zt">Welcome to<br> the gourmet world</h3>
+<br>
+<h4 style="float:left;">
+<br>美食，顾名思义就是美味的食物，贵的有山珍海味，便宜的有街边小吃。
+<br>其实美食是不分贵贱的，只要是自己喜欢的，都可以称之为美食。中
+<br>国素有”烹饪王国“这个美誉。在中国这个大家庭里，我们有五十六个
+<br>小家庭，每个家庭都有自己的特色美食。美食吃前有期待、吃后有回
+<br>味，已不仅仅是简单的味觉感受，更是一种精神享受。享受美食也要
+<br>看场合，场合好美食起来也有味道。世界各地美食文化博大精深，营
+<br>养物质各不相同，品味更多美食，享受更多健康，也让人吃的更加开心。
+<br>美食，顾名思义就是美味的食物，贵的有山珍海味，便宜的有街边小
+<br>吃。其实美食是不分贵贱的，只要是自己喜欢的，都可以称之为美食。
+<br>中国素有”烹饪王国“这个美誉。在中国这个大家庭里，我们有五十六
+<br>个小家庭，每个家庭都有自己的特色美食。美食吃前有期待、吃后有
+<br>回味，已不仅仅是简单的味觉感受，更是一种精神享受。享受美食也
+<br>要看场合，场合好美食起来也有味道。世界各地美食文化博大精深，
+<br>营养物质各不相同，品味更多美食，享受更多健康，也让人吃的更加开心。</h4>
+<img src="1.gif" width="400" height="400" / >
+<div id="dy"><video width="400" height="300" controls>
+<source src="1.ogg" type="video/ogg">
+<source src="1.mp4" type="video/mp4"></video>
+</div>
+</body>
+</html>

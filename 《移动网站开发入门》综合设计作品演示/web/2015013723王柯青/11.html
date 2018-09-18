@@ -1,0 +1,190 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>王的空间</title>
+<style>
+.btnstyle {
+	background-color:#C9F;
+	color:#C66;
+	width: 150px;
+	padding: 8px;
+	border-top-left-radius:0.5em;
+	border-top-right-radius:0.5em;
+	border-bottom-left-radius:0.5em;
+	border-bottom-right-radius:0.5em;
+	float:left;
+	margin:0px 100px;
+}
+.nav ul li a{
+width:80px;/*设置元素宽为80px*/
+height:28px;/*设置高度为28px*/
+line-height:28px;/*设置行距为28px，让文字在每行的中间位置*/
+background:#C9F;/*设置元素的背景为红色*/
+color:#C66;/*文字颜色是白色*/
+margin:0px 40px;
+font-size:12px;/*用12号字*/
+display:block;
+text-align:center;/*让文本居中*/
+text-decoration:none; /*去掉下划线*/
+border-top-left-radius:0.5em;
+border-top-right-radius:0.5em;
+border-bottom-left-radius:0.5em;
+border-bottom-right-radius:0.5em;
+border-top-width:2px;/*边框的粗细*/
+border-right-width:2px;/*边框的粗细*/
+border-bottom-width:1px;/*边框的粗细*/
+border-left-width:1px;/*边框的粗细*/
+border-top-style:solid;/*边框的样式*/
+border-right-style:solid;/*边框的样式*/
+border-bottom-style:solid;/*边框的样式*/
+border-left-style:solid;/*边框的样式*/
+border-top-color:#da7c0c;/*边框的颜色*/
+border-right-color:#da7c0c;/*边框的颜色*/
+border-bottom-color:#609;/*边框的颜色*/
+border-left-color:#609;/*边框的颜色*/
+}
+.nav ul li a:hover{ 
+width:78px;
+height:26px;
+line-height:28px;
+border:2px solid #C3C;
+color:#906;
+background:#FFF;
+}
+.nav ul li{
+float:left;
+}
+.nav ul li ul { position:absolute; display:none;}
+.nav ul li ul li { float:none;}
+.nav ul li ul li a { border-right:none; border-top:2px dotted #0033FF; background:#FFC;}
+.nav ul li:hover ul{ display:block; }
+h1 {
+	font-size:100px;
+	float:right;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	font-style: italic;
+}
+#nowtime{font-size:60px; color:#F99;float:left;margin:0 auto;}
+
+
+body {
+	background-image: url(1.jpg); background-size:100%;
+}
+li {list-style:none;}
+.ding {width:1366;height:50; margin:0;}
+.zhong {width:1366; height:400; }
+.xia {width:866; height:200; float:left;}
+.sidebar {width:500; height:200; }
+
+</style>
+</head>
+
+<body>
+<div>
+<div class="ding">
+<input name="play" class="btnstyle" type="button" value="首页" onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#efefef'"onClick="window.location.href='11.html'"/>
+<div class="nav">
+  <ul>
+    <li><a>小游戏</a>
+      <ul>
+        <li><a href="12.html">贪吃蛇</a></li>
+        <li><a href="13.html">俄罗斯方块</a></li>
+      </ul>
+    </li>
+    <li><a href="14.html">图片</a>
+    </li>
+    <li><a>新闻资讯</a>
+      <ul>
+        <li><a href="http://news.baidu.com/guoji" target="_blank">国际</a></li>
+        <li><a href="http://news.baidu.com/guonei" target="_blank">国内</a></li>
+        <li><a href="http://news.baidu.com/game" target="_blank">游戏</a></li>
+        <li><a href="http://news.baidu.com/ent" target="_blank">娱乐</a></li>
+        <li><a href="http://jiaoyu.news.baidu.com/" target="_blank">教育</a></li>
+        <li><a href="http://news.baidu.com/internet" target="_blank">互联网</a></li>
+        <li><a href="http://news.baidu.com/house" target="_blank">房产</a></li>
+        <li><a href="http://news.baidu.com/sports" target="_blank">体育</a></li>
+      </ul>
+    </li>
+    <li><a >美食推荐</a>
+    <ul>
+        <li><a href="16.html">西域美食</a></li>
+        <li><a href="17.html">北方美食</a></li>
+        <li><a href="18.html">南方美食</a></li>
+      </ul></li>
+    <li><a href="#" onClick="openwin()">栏目</a></li>
+  </ul>
+</div></div>
+<div class="zhong">
+<h1 style="color:#C96">欢迎来到Wang的个人空间</h1>
+</div>
+<div class="xia">
+<div id="nowtime">
+<script> 
+function repeat(){
+		var date= new Date(); //获得当前的时间		
+		var nowtime= document.getElementById('nowtime');
+		nowtime.innerHTML="当前时间：</br></br>"+date.toLocaleDateString()+date.toLocaleTimeString();
+	}
+	
+	window.setInterval("repeat()",1000);
+</SCRIPT>
+</div></div>
+
+<div id="img" style="position: absolute;visibility :hidden;padding:0px;" onMouseOver="clearInterval(interval)" onMouseOut="interval = setInterval('changePos()', delay)" align="middle">
+<span style="CURSOR:hand;color:#30F;font-weight:bold;font-align:center;font-size:12px;padding-left:0px;" onClick="clearInterval(interval);fdck.style.visibility = 'hidden';img.style.visibility = 'hidden';">点击隐藏</span>
+<div id="fdck" style="width:100%; height:100%; font-align:center; visibility:visible;border：0px; background-color: no">
+<iframe width=320   height=150   src="topWindows.html"  frameborder=no scrolling="no">
+</iframe>
+</div>
+</div>
+<script language=javascript>
+var xPos = 0;
+var yPos = document.body.clientHeight;
+var step = 2;
+var delay = 30;
+var height = 0;
+var Hoffset = 0;
+var Woffset = 0;
+var yon = 0;
+var xon = 0;
+var pause = true;
+var interval;
+img.style.top = yPos;
+function changePos() {
+width = document.body.clientWidth;
+height = document.body.clientHeight;
+Hoffset = img.offsetHeight;
+Woffset = img.offsetWidth;
+img.style.left = xPos + document.body.scrollLeft;
+img.style.top = yPos + document.body.scrollTop;
+if (yon) {yPos = yPos + step;}
+else {yPos = yPos - step;}
+if (yPos < 0) {yon = 1;yPos = 0;}
+if (yPos >= (height - Hoffset)) {yon = 0;
+yPos = (height - Hoffset);}
+if (xon) {xPos = xPos + step;}
+else {xPos = xPos - step;}
+if (xPos < 0) {xon = 1;xPos = 0;}
+if (xPos >= (width - Woffset)) {xon = 0;xPos = (width - Woffset);}
+}
+function start() {
+img.style.visibility = "visible";
+interval = setInterval('changePos()', delay);}
+start();
+</script>
+<script LANGUAGE="JavaScript">
+function openwin() {
+window.open ('19.html', 'newwindow', 'height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')
+}
+</script>
+</div class="sidebar">
+<div><video width="450" height="250" controls>
+<source src="00.ogg" type="video/ogg">
+<source src="00.mp4" type="video/mp4"></video>
+</div></div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+	background-image:url(../pic/beijing.jpg);
+}
+#biaoti{
+	letter-spacing:20px; 
+	text-align:center;    
+	text-shadow:5px 5px 5px #000; 
+	color:#FFF;
+	font-variant:small-caps;
+	font-weight:900;
+	font-size:60px;
+	
+}
+
+#biaoti a:link,a:visited{
+	text-decoration:none;
+}
+#biaoti a:hover;a:active{
+	text-decoration:underline;
+}
+
+#daohang ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+#daohang li{
+	float:left;
+}
+
+#daohang a:link,a:visited{
+	display: block;
+	width: 367px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #CCCCCC;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#daohang a:hover,a:active
+{
+background-color:#cc0000;
+}
+
+#demo { 
+	overflow:hidden;
+    background: #FFF;
+    overflow:hidden;
+    border: 1px dashed #CCC;
+    width:900px;
+}
+#demo img {
+    border: 3px solid #F2F2F2;
+}
+#indemo {
+    float: left;
+    width: 1200%;
+}
+#demo1 {
+    float: left;
+}
+#demo2 {
+    float: left;
+}
+
+#cat {
+	position:absolute;
+	left:930px;
+	right:1000px;
+	top:150px;
+	float:right;
+	margin: 5px;
+	padding:15px;
+	width: 500px;
+	height: 900px;
+	border: 0px;
+	color:#FFF;
+} 
+
+#cat h2{
+	text-align:center;
+}
+address {
+	color:#FFF;
+	position:absolute;
+	left:650px;
+	rignt:650px;
+	top:1050px;
+	font-size:26px;
+	
+	
+
+}

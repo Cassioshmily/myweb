@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+<script language=javascript>
+function toopen(){
+    if(document.getElementById("password").value=="123456"){
+           document.forms[0].action="scp.html";
+           return true;
+        }else{
+        alert("用户名或者密码不正确！")
+        return false;
+        }
+    }
+</script>
+	<style type="text/css">
+table,th,td
+{
+border:1px solid blue;
+}
+h1 {background-color: #ff0000;padding: 12px;}
+</style>
+  <meta charset="UTF-8">
+  <embed src="x.mp3" hidden="true" autostart="true" loop="true">
+ <body background="00.jpg" > 
+ 	<h1 align="center">scp基金会 </h1>
+ 	<body class="img">
+    <div class="wrapper">
+        <div class="loginBox">
+            <div class="loginBoxCenter">
+<form method="post" action="scp.html" name="myform" >
+                <p align="center"><label for="username" style="color:#fff">用户名：</label>
+               <br><input type="password" id="password" name="password" class="loginInput" placeholder="请输入用户名" value="" /></br>
+                <br><label for="password" style="color:#fff">密码：</br>
+                <br><input type="password" id="password" name="password" class="loginInput" placeholder="请输入密码" value="" />  </br> 
+                   </div>
+            <div align="center" class="loginBoxButtons">
+                <input  type="submit" value="登陆" class="loginBtn" onclick="return toopen();" >  </p>          
+                     </form>
+            </div>
+        </div>
+    </div>
+
+     <a  align="center" href="http://www.scp-wiki.net/">更多内容详情请咨询官网</a>
+</html>

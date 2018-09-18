@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+
+{% block head %}
+<link rel="stylesheet" href="/static/css/emcss.css">
+<script type="text/javascript">
+
+function disp_prompt()
+  {
+  var name=prompt("请输入您的手机号码")
+  if (name!=null && name!="")
+    {
+    document.write("注册成功！")
+    }
+  }
+
+
+</script>
+{% endblock %}
+
+{% block content %}
+
+<div id="header">
+<h1 style="font-family: Geneva;font-size: 40px">iBelieve</h1>
+</div>
+
+
+<div id="adv">
+		<ul class="navx">
+			<li><a href="/home" target="_blank">Home</a>
+			</li>
+			<li><a href="/page1" target="_blank">css</a>
+			</li>
+			<li><a href="/page2">js</a>
+			</li>
+
+		</ul>
+</div>
+
+
+<div id="nav">
+<form>
+
+<p style="font-size: 12px;color: white;letter-spacing: -1px;">
+			用户名：
+    <input type="text" class="form-control"  placeholder="Name">
+			<br>
+			密码：<input id="demo" type="password" placeholder="Password" name="password">
+			<center>
+					<input type="button" onclick="log()" value="登录"> </button>
+				    <input type="button" onclick="disp_prompt()" value="注册"></center>
+		</p><p id="mess" style="font-size: 12px;text-align: center;color: #800000"></p>
+</div>
+</form>
+
+
+<div id="section">
+<h2 style="font-family: Western;">TVXQ</h2>
+<p onclick="this.innerHTML='Once I say I love you I think you would be gone, oh baby~ cuz we are too young to love so I can say little long~ hold you in my arms but I will be waiting for you to say you want me to be with you.'">HUG
+</p>
+</div>
+
+<div id="footer">
+<div id="txt"></div>
+<p>By Cassioshmily</p>
+<p>Always Keep The Faith...Hope To The End</p>
+
+</div>
+
+{% endblock %}

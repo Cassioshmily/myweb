@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<script type="text/javascript">
+function validate(){
+      account=document.loginForm.account.value;
+      password=document.loginForm.password.value;
+      if(account==""){
+        alert("帐号不能为空");
+        document.getElementById("acc");
+        document.loginForm.account.focus(); return; }
+      document.loginForm.submit(); }
+	  function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+} 
+<style type="text/css">
+body{
+ margin:0px;
+ padding:0px;
+}
+.d1{
+position:absolute; 
+ left:0px;
+ top:0px; 
+ width:100%; 
+ height:100%;
+ z-index:-1;
+}
+</script>
+</head>
+<body>
+<body onload="startTime()">
+<div id="txt"></div>
+ <h1 style="text-align:center">欢迎您登录: XX博客</h1>
+<script type="text/javascript">
+function validate(){
+	var account = "1", password = "11";
+  var account=document.loginForm.account.value;
+  var password=document.loginForm.password.value;
+   if(account=="1" && password=="11")
+{
+ alert("登入成功!");
+window.location.href="index.html";
+}
+ if(account==""){
+        alert("帐号不能为空");}
+ if(password=="1")
+     {alert("密码错误！！")}
+	document.loginForm.password(); }
+  </script>
+  欢迎您登录：
+  <form name="loginForm">
+    输入帐号：<input name="account"   type="text"><br>
+    输入密码：<input name="password" type="password"><br>
+    <input type="button" onclick="validate()" value="登录">
+        <input type="button" onclick="validate()" value="退出"></form>
+</style>
+<body>
+<div class="d1"><img src="images/1.jpg" width="100%" height="100%"/></div>
+<body bgcolor="#0099FF">
+<center>
+</body>
+</html>

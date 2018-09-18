@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="./scripts/jquery-3.2.1.min.js"></script> 
+  <title>Document</title> 
+  <script src="jquery.js"></script> 
+ </head> 
+ <body> 
+  <form method="post" name="myform" onsubmit="checkpost()">     
+  <label for="name">用户名：</label><input type="text" name="name" id="name7" /><br />     
+  <label for="pw">密码：</label><input type="password" name="pw" id="pw" /><br />     
+  <input type="button" onclick=checkpost(); value="提交" />
+  </form>
+  <script>function checkpost()
+  { 
+    var temp = $('#name7').val();//获取值 
+    var temp1 = $('#pw').val();//获取值 
+    if((temp=="ztt")&&(temp1=="123456")){
+         window.location="first.html";  }  
+      else{    alert("用户名或密码不正确！")   ;} 
+  }</script>
+ </body> 
+ </html>  

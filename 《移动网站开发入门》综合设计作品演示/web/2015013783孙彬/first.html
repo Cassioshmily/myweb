@@ -1,0 +1,205 @@
+﻿<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+   p.flower {background-image: url(4.jpg); padding: 20px;}
+   h1 {font-family:Georgia;color:#CC00FF;; font-style: italic;}
+   h2 {text-decoration: underline;}
+   table,th{border:1px solid blue;}
+   th{text-align:bottom;}
+   a:link {color:#FF0000;}    
+   a:visited {color:#00FF00;} 
+   a:hover {color:#FF00FF;}   
+   a:active {color:#0000FF;}
+   ul {list-style-type : square}
+   h3 
+{
+border:red solid thin;
+outline:#00ff00 dotted thick;
+}
+    </style>
+    <script>
+function mOver(obj)
+{
+obj.innerHTML="一寸光阴一寸金"
+}
+
+function mOut(obj)
+{
+obj.innerHTML=""
+}
+</script>
+<style> 
+div
+{
+width:250px;
+height:50px;
+background:red;
+position:relative;
+animation-name:myfirst;
+animation-duration:5s;
+animation-timing-function:linear;
+animation-delay:2s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+/* Firefox: */
+-moz-animation-name:myfirst;
+-moz-animation-duration:5s;
+-moz-animation-timing-function:linear;
+-moz-animation-delay:2s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:alternate;
+-moz-animation-play-state:running;
+/* Safari and Chrome: */
+-webkit-animation-name:myfirst;
+-webkit-animation-duration:5s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-delay:2s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+/* Opera: */
+-o-animation-name:myfirst;
+-o-animation-duration:5s;
+-o-animation-timing-function:linear;
+-o-animation-delay:2s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:alternate;
+-o-animation-play-state:running;
+}
+
+@keyframes myfirst
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+</style>
+ <script type="text/javascript">
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+<body onload="startTime()">
+</body>
+	<title>简单的HTML 5页面</title>
+				
+</head>
+<body  background="2.jpg";style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+	
+	<header>
+		<h1>
+		<form action="third.html"> 
+   <fieldset>
+   <legend>你渴望知识么:</legend>
+   <br>
+   即将步入大学的学子呦，记录下你的名字吧:<br>
+   <input type="text" name="firstname" >
+   <br>
+   确定你的性别:<br>
+   <input type="radio" name="sex" value="male" checked><font size="4" 	color="#000000">男</font>
+  <br>
+   <input type="radio" name="sex" value="female"><font size="4" 	color="#000000">女</font>
+   </fieldset>
+   <input type="submit" value="先看一眼大学">
+   <center> <div id="txt" onmouseover="mOver(this)" onmouseout="mOut(this)" ></div></center>
+       </form> 
+       </h1>
+       <p>
+     <script type="text/javascript">
+    var number=6;
+    var str0="即将步入大学生活：";
+    while(number>1)
+     {
+      number--;
+      str1=str0+number;
+      print(str1);
+    }
+    function print(str){window.alert(str);}
+    </script>
+
+         <table border="1">
+         <caption><font size="8">我的大学</font></caption>
+         <tr>
+         <th><font size="5" >社团</font></th>
+          <th><font size="5" 	color="#FF0000">课堂</font></th>
+          <th><font size="5" >体育</font></th>
+          <th><font size="5" 	color="#0000FF">设计作品</font></th>	
+         </tr>
+          <tr>
+          <td><center><font size="6">放飞梦想</font></center></td>
+           <td><font size="6">丰富自我</font></td>
+           <td><center><font size="6">强身健体</font></center></td>
+           <td><font size="6">毕业所需</font></td>
+          </tr>
+         </table>
+        </p>	
+        <h3>
+        今天又是充满希望的一天：
+         <a href="second.html">
+         <img src="1.jpg" width="1024" height="256"></a>
+         </h3>
+	</header>
+	
+	<hr />	
+     <p><font size="6">上大学有什么<del>好处</del>值得你学习的地方，看下面这句话</font></p>
+	 <h2><aside><font size="5">研表究明,汉字序顺并不定一影阅响读!事证实明了当你看这完句话之后才发字现都乱是的</font></aside></h2>									
+	 <p><center><font size=" 5">大学必备：损友</font></center></p>
+	 <p><center>如果你每点击一次下面的按钮，你的室友会胖一斤，那么你选择</center><p>
+     <p><center><button type="button" onclick="alert('畜生的哦！！')" ><font size="6" color="#FF00FF">冒紫火的加特林</font> </button>      <button type="button" onclick="alert('牲口的哦！！！')"><font size="6" color="#00FF00">冒绿光的巴雷特</font></button></center></p>
+     <button onclick="myFunction()">我知道你是谁哦，点开会显示你的照片！</button>
+
+    <script>
+function myFunction()
+{
+document.write("<img src='3.jpg' >啊哈，没想到吧");}
+</script>
+
+</body>
+</html>

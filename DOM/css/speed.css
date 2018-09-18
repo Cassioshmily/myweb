@@ -1,0 +1,15 @@
+.speed{
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  left: -200px;
+  position: relative;
+}
+.speed span{
+  background-color: blue;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  left: 200px;
+  top: 75px;
+}

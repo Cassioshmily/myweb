@@ -1,0 +1,53 @@
+
+#header {
+    background-color: #444444;
+    color:white;
+    text-align:center;
+    padding:30px;
+
+} /*标题栏样式*/
+#adv{
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	padding: 4px;
+}/*菜单栏样式*/
+#nav {
+    position: fixed；
+    line-height:50px;
+    background-color:#777667;
+    height:400px;
+    width:150px;
+    float:left;
+    padding:20px;	      
+}/*左边栏样式*/
+#section {
+    position: fixed；
+	background-color: white；
+	height:400px;
+	width:900px;
+    float:right;
+    padding:55px;		 
+}/*主页样式*/
+#footer {
+    background-color: #f2f2f2;
+    color:gray;
+    clear:both;
+    text-align:center;
+   padding:100px;	 
+}/*脚页样式*/	
+#button {
+	border:2px solid #a1a1a1;
+	padding:10px 40px; 
+	background:#aaaaaa;
+	width:350px;
+	border-radius:25px;
+}
+a:link {color: #Fccccc}
+a:visited {color: #ffffff}
+a:hover {color: #afaead;}
+a:active {color: #abcdef;} 
+.nav *{text-decoration:none;font-size:9pt;font-family: verdana;}/*菜单栏*/
+.nav{list-style:none;height:30px;margin:0 auto;background-color:#333333;}/*菜单栏*/
+.nav li{float:left;}
+.nav li a{line-height:30px;padding:0 55px;}

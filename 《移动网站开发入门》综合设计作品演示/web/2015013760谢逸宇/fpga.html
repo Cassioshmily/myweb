@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>制作背景</title>
+    <link rel="stylesheet" type="text/css" href="./static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./static/content/site.css" />
+    <script src="./static/scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="./index.html" class="navbar-brand">首页</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+           
+                    <li><a href="./emmm.html" target="_blank">图片欣赏</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+		<h2>制作背景</h2>
+		<h3>制作公司Aniplex、日本富士电视台及A-1 Pictures动画制作公司于2010年12月启动了名为“ANOHANA PROJECT”的原创动画企划。导演、编辑和人物设定均出自2008年电视动画《龙与虎》的核心成员。导演长井龙雪首次担任原创动画的监督工作，此前曾指导过《龙与虎》、《某科学的超电磁炮》等多部作品。并由曾为《Fate/stay night》、《黑执事》等作撰写剧本的冈田麿里担任编剧。负责人物设计的田中将贺，过去曾任《学园默示录》、《家庭教师Hitman Reborn！》等作人物设计。
+舞台设定是日本埼玉县秩父市，动画中出现不少真实场景以及建筑。</h3>
+			
+        <hr />
+  <script>
+	function startTime()
+	{
+	var today=new Date()
+	var h=today.getHours()
+	var m=today.getMinutes()
+	var s=today.getSeconds()
+	// add a zero in front of numbers<10
+	m=checkTime(m)
+	s=checkTime(s)
+	document.getElementById('txt').innerHTML=h+":"+m+":"+s
+	t=setTimeout('startTime()',500)
+	}
+
+	function checkTime(i)
+	{
+	if (i<10) 
+	  {i="0" + i}
+	  return i
+	}
+	</script>       
+	
+	<footer style="text-align: center;"> 
+	<body onload="startTime()">
+	<div id="txt"></div>
+	<p>By xyy</p>
+	<p>如有雷同纯属偶然</p>
+	</div>
+	</body>
+    </footer>
+    </div>
+
+    <script src="./static/scripts/jquery-1.10.2.js"></script>
+    <script src="./static/scripts/bootstrap.js"></script>
+    <script src="./static/scripts/respond.js"></script>
+<embed src="../xyy/gequ.mp3" width="0" height="0" loop="false"></embed>
+</body>
+</html>

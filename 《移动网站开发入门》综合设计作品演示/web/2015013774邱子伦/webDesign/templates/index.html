@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron" style="background-image: url('/static/image/bg/IMG_312.jpg');border-image-repeat: no-repeat;background-size: 100% 100%;">
+<h1 style="color: white">网页设计文档及展示</h1>
+<p class="lead" style="color: white">WebPage Design and Documents</p>
+<p><a href="/doc" class="btn btn-primary btn-large">Documents</a></p>
+</div>
+
+<div class="row">
+<div class="col-md-4">
+<h2>ARM系统</h2>
+<p>
+		Advanced RISC Machines.<br>
+		linux操作系统、arm可执行文件的编译、hps与fpga的交互.
+</p>
+<p><a class="btn btn-default" href="/">Learn more &raquo;</a></p>
+</div>
+<div class="col-md-4">
+<h2>图像处理算法</h2>
+<p>Digital Image Processing Algorithm.<br>
+		opceCV、深度学习.
+</p>
+<p><a class="btn btn-default" href="/">Learn more &raquo;</a></p>
+</div>
+<div class="col-md-4">
+<h2>FPGA系统</h2>
+<p>Field－Programmable Gate Array.<br>
+		soc板gpio的控制、摄像头的使用.
+</p>
+<p><a class="btn btn-default" href="/"./>Learn more &raquo;</a></p>
+</div>
+</div>
+<hr />
+
+{% endblock %}

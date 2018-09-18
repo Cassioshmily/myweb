@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="keywords" content="">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="./index_files/jquery-3.2.1.min.js.下载"></script>
+<script type="text/javascript">
+$(document).ready(function(){     //这是为了防止文档在完全加载（就绪）之前运行 jQuery 代码
+  $("#hide").click(function(){     //显示隐藏
+  $("#p1").hide(1000); //效果持续时间
+  });
+  $("#show").click(function(){
+  $("#p1").show(1000);
+  });
+});
+
+</script>
+<!-- Custom Theme files -->
+<link href="./index_files/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="./index_files/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="./index_files/font-awesome.css" rel="stylesheet">   <!-- font-awesome icons --> 
+<link rel="stylesheet" href="./index_files/flexslider.css" type="text/css" media="screen"> 
+<!-- //Custom Theme files -->  
+<!-- font -->
+<link href="./index_files/css" rel="stylesheet">
+<link href="./index_files/css(1)" rel="stylesheet">
+<!-- //font -->
+
+</head>
+<body> 
+<!-- navigation -->
+			<div class="top-nav w3-agiletop">
+				<div class="container">
+					<div class="navbar-header w3llogo">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							Menu
+						</button>
+						<h1><a href="../home.html">cup</a></h1> 
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="w3menu navbar-left">
+							<ul class="nav navbar">
+								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="gallery.html" class="active">Gallery</a></li>
+										<li><a href="../index.html">Others</a></li>
+									</ul>
+								</li> 
+							</ul>
+						</div>
+					</div>
+				</div>	
+			</div>	
+			<!-- //navigation -->
+
+	<!-- banner -->
+	<div class="w3ls-banner">
+		<!-- banner-text -->
+		<div class="banner-text">
+		<div class="flexslider">
+<p id="p1"><video width="1080" height="720" controls="controls">
+  <source src="123.mp4" type="video/mp4">
+</video></p>
+
+		</div>    
+		</div>  
+		<!-- //banner-text --> 
+		<button id="hide" type="button" align="left">隐藏</button>
+<button id="show" type="button" align="left">显示</button>
+	</div>	
+	<!-- //banner -->
+	<!-- welcome -->
+	<div class="welcome">
+
+			<div class="welcome-top">
+				<div class="col-md-6 welcome-left">
+					<div class="welcome-left-top">
+						<h3>霍金斯</h3>
+						<h3>（ホッジンズ）</h3>
+						<p>原是莱丁谢夫特里希国的军人，现任C·H邮政公司的社长。</p>
+						<p>也作为薇欧瑞特的监护人。</p>
+						<p>爱好打扮，喜欢赌博。</p>
+						<p>虽然和基尔伯特性格完全不同，两人却是老朋友。</p>
+					</div>
+				</div>
+				<div class="col-md-6 welcome-right"></div>
+				<div class="clearfix"></div>
+			</div>
+
+
+			<div class="welcome-bottom">
+				<div class="col-md-6 welcome-Middle-left"></div>
+				<div class="col-md-6 welcome-Middle-right">
+					<div class="welcome-left-top">
+						<h3>薇欧瑞特·艾弗戈登</h3>
+						<h3>（ヴァイオレット・エヴァーガーデン）</h3>
+						<p>隶属C·H邮政公司的“自动记忆人偶”少女。</p>
+						<p>与其美貌不相称的是，拥有罕见的战斗力。</p>
+						<p>幼年时被基尔伯特捡到。</p>
+						<p>有着作为军人的过去。</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+	</div>	  
+
+	<script type="text/javascript" src="./index_files/jquery-2.1.4.min.js.下载"></script>
+	<!-- js --> 
+	<!-- FlexSlider --> 
+	<script defer="" src="./index_files/jquery.flexslider.js.下载"></script>
+	<script type="text/javascript">
+		$(window).load(function(){		
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	</script>
+	<!-- End-slider-script -->
+	<script src="./index_files/SmoothScroll.min.js.下载"></script> 
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="./index_files/move-top.js.下载"></script>
+	<script type="text/javascript" src="./index_files/easing.js.下载"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->  	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./index_files/bootstrap.js.下载"></script>
+
+</body>
+</html>

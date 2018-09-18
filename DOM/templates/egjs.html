@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="../js/move.js"></script>
+    <link rel="stylesheet" href="../css/eg.css">
+  <!--  <script src="js/opacity.js"></script>-->
+
+
+
+<script>
+  window.onload = function(){
+    //速度动画
+    var oMove = document.getElementById('move');
+    var aLi = oMove.getElementsByTagName('a');
+    for (var i=0;i<aLi.length;i++){
+      aLi[i].onmouseenter = function(){
+        var _this = this.getElementsByTagName('i')[0];
+          startMove(_this,{top:-10,opacity:0},function(){
+            _this.style.top = 30 + 'px';
+            startMove(_this,{top:10,opacity:100});
+          });
+      }
+    }
+}
+
+</script>
+    <title>动画案例</title>
+  </head>
+  <body>
+    <div id="move">
+      <a href="#"><i><img src="../images/xixi.png"></i><p>xixi</p></a>
+      <a href="#"><i><img src="../images/haha.png"></i><p>haha</p></a>
+      <a href="#"><i><img src="../images/heihei.png"></i><p>heihei</p></a>
+      <a href="#"><i><img src="../images/houhou.png"></i><p>houhou</p></a>
+    </div>
+  </body>
+</html>

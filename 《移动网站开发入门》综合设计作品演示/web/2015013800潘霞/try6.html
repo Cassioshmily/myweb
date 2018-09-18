@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>一只只花</title> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="refesh" content="20">
+		<meta name="auther" content="迟来的浅唱低吟">    
+		<link href="try6.css" rel="stylesheet" type="text/css" /><!--添加css样式表-->
+		<script type="text/javascript" src="jquery-3.2.1.js"></script><!--添加jquery库-->
+
+		<script type="text/javascript">
+<!--#include file="now.asp" -->
+		function changeStyle()
+		{
+
+			var time=new Date().getHours();
+			if (time<20)
+		  	{
+		  	document.body.style.backgroundColor="pink";
+		  	}
+			else
+		  	{
+		    document.body.style.backgroundColor="black";
+		  	}
+
+		}
+		
+		function form_onsubmit()
+		{
+			var fname = document.getElementById("name").value;
+			var fpassword = document.getElementById("password").value;
+			
+			
+			if (fname=="")
+				{
+					alert("用户名不能为空");
+				    return false;
+				}
+
+			if (fpassword==""|| isNaN(fpassword))
+				{
+					alert("密码错误");
+				    return false;
+				}
+		}
+			
+			
+
+		
+
+		</script>
+</head>
+
+ <body>
+
+	  <div class="fixednav">
+	    <ul class="nav_menuleft">
+	  		 <li class="nav_menuleft-item"><a href="http://www.baidu.com/"  target="_blank">
+	  		 		<img  style="width:40px;height:20px;float: left;border="0"; src="navflower.jpg" /></a>
+             </li>
+	  		 <li  class="nav_menuleft-item"><a href="7new.html" target="_blank">你</a>
+	  		 	<ul class="nav_boxleft">
+	  		 		<li class="nav_boxleft-element">喜</li>
+	  		 		<li class="nav_boxleft-element">欢</li>
+	  		 	</ul>
+	  		 </li>
+	  		 <li class="nav_menuleft-item"><a href="http://weibo.com/login/" target="_blank">喜</a>
+				<ul class="nav_boxleft">
+	  		 		<li class="nav_boxleft-element">欢</li>
+	  		 		<li class="nav_boxleft-element">你</li>
+	  		 	</ul>
+	  		 </li>
+	  		 <li class="nav_menuleft-item"><a href="http://www.qq.com/" target="_blank">欢</a>
+				<ul class="nav_boxleft">
+	  		 		<li class="nav_boxleft-element">喜</li>
+	  		 		<li class="nav_boxleft-element">你</li>
+	  		 	</ul>
+	  		 </li>
+	  		 <li class="nav_menuleft-item"><a href="https://www.zhihu.com/" target="_blank">吗</a>
+				<ul class="nav_boxleft">
+	  		 		<li class="nav_boxleft-element">？</li>
+	  		 		<li class="nav_boxleft-element">？</li>
+	  		 	</ul>
+	  		 <embed src="二零三.mp3" loop="true" HIDDEN="TRUE" ></embed>
+	  		 </li>
+		  </ul>
+		  <form  class="search">
+	  		    <span class="sousuo"><input type="text" placeholder="搜索"></span>
+	  		    <span  class="tijiao"><input type="submit"></span>
+	     </form>
+		  <ul class="nav_menuright">
+		  		<li class="nav_menuright-item"><a href="https://passport.baidu.com/v2/?login&tpl=mn&u=https%3A%2F%2Fwww.baidu.com%2F">登录</a></li>
+		  		<li class="nav_menuright-item"><a href="https://passport.baidu.com/v2/?reg&tt=1508554739142&gid=B89B350-4077-4E7E-AC9D-A9CBDE6DFDB1&tpl=mn&u=https%3A%2F%2Fwww.baidu.com%2F"/>注册</li>
+		  </ul>
+	 </div>
+<div class="main">
+	<div clas="topcol">
+  	  	<a  id="web" href="http://www.baidu.com/" >
+	  		 		<img  id=obj style="width:875px;height:250px;float:top;border="0"; padding:20px auto; src="topflower.jpg"  /></a>
+	  		<script language =javascript > 
+			var curIndex=0; 
+			//时间间隔 单位毫秒 
+			var timeInterval=3000; 
+			var arr=new Array();
+			arr[0]="topflower.jpg" ; 
+			arr[1]="topmeihua.jpg"; 
+			arr[2]="toptree.jpg"; 
+			arr[3]="topgrass2.jpg"; 
+			arr[4]="topsea.jpg"; 
+			setInterval(changeImg,timeInterval);/* 动画函数，就是每隔timeInterval这么长的时间执行一次changeImg()方法*/
+			function changeImg() 
+			{ 
+			var obj=document.getElementById("obj");/*;//取id为obj的对象*/
+
+			if (curIndex==arr.length-1) /*这个if是当curIndex的值与上面定义的数组长度相等时，把他的值变为初始的0*/
+
+			{ 
+			curIndex=0; 
+			} 
+			else 
+			{ 
+			curIndex+=1; 
+			} 
+			obj.src=arr[curIndex];
+			
+			} 
+			
+
+			</script> 
+  	  	 </div>
+
+	 <div class="leftcol">
+			<ul>
+			 	<li ><a href="new.html" target="_blank"><img  src="new.jpg"/></a></li>
+			 	<li ><a href="7new.html" target="_blank"><img src="7new.jpg"/></a></li>
+			 	<li ><a href="30new.html" target="_blank"><img src="30new.jpg"/></a></li>
+			 	<li ><a href="一只花出版.html" target="_blank"><img src="一只花出版.jpg"/></a></li>
+
+			</ul>
+			<div class="time">
+			<p>点击这个按钮，获得基于时间的背景</p>
+		   <button onclick="changeStyle()">点击这里</button>
+			<p><b>时间显示</b></p>
+
+           <script>
+             document.write(Date());
+          </script>
+          </div>
+      	</div>
+      
+    <div  class="midcol" style="float:left;width:436px;height:668px;background-color:lightcyan;">
+      		<div >
+	      		<p><h1 align="center"> 《时间》</h1></p>
+	     		<p><h3 align="center"> 作者：沈从文</h3></p>
+	     		<p class="detail">
+	           一切存在严格地说都需要“时间”。时间证实一切，因为它改变一切。气候寒暑，草木荣枯，人从生到死，都不能缺少时间，都从时间上发生作用。
+	     		</p>
+	     		<p class="detail">
+	           常说到“生命的意义”或“生命的价值”。其实一个人活下去真正的意义和价值，不过占有几十个年头的时间罢了。生前世界没有他，他无意义和价值可言的；活到不能再活死掉了，他没有生命，他自然更无意义和价值可言。
+	     		</p> 
+	    		 <p class="detail">
+	           正仿佛多数人的愚昧与少数人的聪明，对生命下的结论差不多都以为是“生命的意义同价值是活个几十年”，因此都肯定生活，那么吃，喝，睡觉，吵架，恋爱，……活下去等待死，死后让棺木来装殓他，黄土来掩埋他，蛆虫来收拾他。
+	　　
+	     		</p>
+	     		<p class="detail">生命的意义解释的即如此单纯，“活下去，活着，倒下，死了”，未免太可怕了。因此次一等的聪明人，同次一等的愚人，对生命的意义同价值找出第二种结论，就是“怎么样来耗费这几十个年头”。虽更肯定生活，那么吃，喝，睡觉，吵架，恋爱，……然而生活得失取舍之间，到底也就有了分歧。
+	            </p>
+
+	          <a href="http://sanwenzx.com/jingdian/mingjia/2009/5219.html" id="a1">查看更多>></a>
+	          <button id="hide" type="button">隐藏</button>
+              <button id="show" type="button">显示</button>
+
+	          <script type="text/javascript">
+					$(document).ready(function(){
+					  $("#hide").click(function(){
+					  $("#a1").hide();
+					  });
+					  $("#show").click(function(){
+					  $("#a1").show();
+					  });
+					});
+			 </script>
+      		</div>
+      </div>
+
+		
+		
+		
+	<div class="rightcol" style="background: url(right.jpg)">
+		   <div class="calendar"  style="background: url(cal.jpg)" >
+			<h3>2017年10月</h3>
+			 <table border="1" summary="calendar" >
+				    <tr>
+				    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+				   </tr>
+				  
+				   <tr>
+				    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+				   </tr>
+				   
+				   <tr>
+				    <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+				   </tr>
+
+				    <tr>
+				    <td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+				   </tr>
+				    
+				    <tr>
+				    <td>22</td><td>23</td><td>24</td><td>15</td><td>16</td><td>27</td><td>28</td>
+				   </tr>
+
+				   <tr>
+				    <td>29</td><td>30</td><td>31</td>
+				   </tr>
+
+			</table>
+		 </div>
+		<div id="message"  style=" background:url(message.jpg)" >
+		    <form onSubmit="return form_onsubmit()"; method="post"; action="提交成功.asp">
+  			<h5>用户留言</h5>
+    		<div class="one">
+    		<label>用户</label>
+		    <input type="text" id="name" class="text"  />  
+		     </div>
+		     <div class="one">
+		    <label>密码</label>
+		    <input type="password"  id="password" class="text"/>  
+		     </div>
+		     <div class="one" >
+		    <label>留言</label>
+		    <textarea></textarea>
+		     </div>
+		     <div>
+		     <input type="submit" class="button" value="提交">
+		     <input type="reset" class="button" value="重置">
+		     </div>
+		     </form>
+		</div> 
+	</div>
+	<div class="footer">
+
+
+		
+		<div class="make">
+				<address >maded by 不二</address>
+			</div>
+		</div>
+
+   </div>
+  </body>
+  </html>
+

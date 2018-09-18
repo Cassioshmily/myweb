@@ -1,0 +1,43 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{margin: 0; padding: 0; border: 0; outline: none;}
+body {	font-family: "宋体";font-size: 12px;color:#000000;line-height: 20px;}
+td,th {font-family: "宋体";font-size: 12px;color: #000000;}
+A:link {TEXT-DECORATION: none;}
+A:visited {TEXT-DECORATION: none;}
+A:hover {TEXT-DECORATION: underline;}
+ul,li{list-style-type:none;}
+.clearit{clear:both;}
+
+body{ background:url(images/bj.jpg);}
+.box{ width:1000px; margin:0 auto; background:rgba(255,255,255,0.7)}
+.box1{ width:1000px; margin:0 auto; background:rgba(255,255,255,0.7)}
+.logo{ width:300px; height:200px; margin:0 auto;}
+.nav{ width:1000px; height:50px; background-color:#90918d;}
+.nav ul li{ width:200px; height:50px; float:left;} 
+.nav li a{ display:block; width:200px; height:50px; text-align:center; line-height:50px; color:#fff; font-size:16px; font-weight:bold;}
+.nav li a:hover{ display:block; width:200px; height:50px; text-align:center; line-height:50px; color:#000; font-size:16px; font-weight:bold; background-color:#756e6c;} 
+.active{ display:block; width:200px; height:50px; text-align:center; line-height:50px; color:#000; font-size:16px; font-weight:bold; background-color:#756e6c;} 
+.ban{ width:1000px; height:500px;}
+.tu{ width:1000px; margin-top:15px;}
+.tu img{ margin-left:5px;}
+.left{ width:400px; float:left;}
+.right{ width:600px; float:left;}
+.left h1{ padding:30px; }
+.left p{ line-height:30px; font-size:14px; padding:15px;}
+.fan{ width:60px; height:40px; margin:30px;}
+.fan a{ line-height:40px; color:#000; font-size:14px;}
+.main h1{ padding:30px;}
+.main p{ line-height:30px; padding:20px;}
+.pic1{ width:450px; float:left;}
+.pic1 img{ margin-top:10px;}
+.pic2{ width:100px; float:left;}
+.pic2 p{ font-size:80px; padding-top:350px; padding-left:10px;}
+.pic3{ width:450px; float:left;}
+.pic3 img{ margin-top:10px;}
+.box1 ul{ width:200px; margin-left:20px; float:left;}
+.box1 ul li{ width:200px; height:60px; line-height:60px;}
+.box1 ul li a{ text-align:center; line-height:60px; font-size:14px; color:#000;}

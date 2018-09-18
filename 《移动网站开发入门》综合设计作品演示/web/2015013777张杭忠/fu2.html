@@ -1,0 +1,67 @@
+﻿<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>登场角色</title> 
+	<style type="text/css">
+	table,th,td
+	{border: 1px solid blue;}	
+	</style>
+	<script type="text/javascript">
+	function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+</head>
+<body background="f.jpg"; style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;"onload="startTime()">
+<table>
+<tr>
+   <th align="center">角色</th>
+   <th align="center">角色介绍</th>
+</tr>
+<tr>
+   <td align="center">里昂·S·肯尼迪</td>
+   <td>从一个菜鸡在艾达的辅助下成长为一个出色的特工，对艾达有一种莫名的好感。</td>
+</tr>
+<tr>
+   <td align="center">海伦娜·哈伯</td>
+   <td>个人能力很强，但是易受到情绪的影响。其妹妹被德雷克·C·西蒙斯绑架后，答应了西蒙斯的要求...最后与里昂一起干掉了可悲的西蒙斯。</td>
+</tr>
+<tr>
+   <td align="center">艾达·王</td>
+   <td>一出场就带着各种谜团，至今不知道其真实身份。可以确定为华裔。其他方面可以说一无所知。</td>
+</tr>
+<tr>
+   <td align="center">杰克·穆勒</td>
+   <td>威斯克的儿子，继承了他老爸强大的免疫能力。拥有强大了体术攻击，卡拉用其基因强化了C病毒，一场争夺围绕着其展开。</td>
+</tr>
+<tr>
+   <td align="center">雪莉·柏金</td>
+   <td>因病毒原因有着强大的再生能力，第一次作为特工出现。</td>
+</tr>
+<tr>
+   <td align="center">克里斯·雷德菲尔德</td>
+   <td>BSAA队员，一次意外出现后。退出了BSAA。但是为了自己的信念经队友劝说后回去了队伍。</td>
+</tr>
+<tr>
+   <td align="center">皮尔斯·奈文斯</td>
+   <td>出色的狙击手，外号“皮卡丘”（为什么自己去了解吧！！！）可怜的他跟了克里斯这个瘟神，最后战死了。</td>   
+</tr> 
+<div id="txt"></div>   
+</body>
+</html>

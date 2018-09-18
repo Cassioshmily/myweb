@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="keywords" content="">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="./index_files/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="./index_files/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="./index_files/font-awesome.css" rel="stylesheet">   <!-- font-awesome icons --> 
+<link rel="stylesheet" href="./index_files/flexslider.css" type="text/css" media="screen"> 
+<!-- //Custom Theme files -->  
+<!-- font -->
+<link href="./index_files/css" rel="stylesheet">
+<link href="./index_files/css(1)" rel="stylesheet">
+<!-- //font -->
+
+</head>
+<body> 
+<!-- navigation -->
+			<div class="top-nav w3-agiletop">
+				<div class="container">
+					<div class="navbar-header w3llogo">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							Menu
+						</button>
+						<h1><a href="index.html">cup</a></h1> 
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="w3menu navbar-left">
+							<ul class="nav navbar">
+								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="gallery.html" class="active">Gallery</a></li>
+								<li><a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-letters="Pages">About</span><span class="caret"></span></a>
+									<ul class="dropdown-menu"> 
+										<li><a href="./zll/index.html">News</a></li>
+										<li><a href="https://bangumi.bilibili.com/movie/12116">Animation</a></li>
+									</ul>
+								</li> 
+							</ul>
+						</div>
+					</div>
+				</div>	
+			</div>	
+			<!-- //navigation -->
+
+	<!-- banner -->
+	<div class="w3ls-banner">
+		<!-- banner-text -->
+		<div class="banner-text">
+		<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<h2>厌倦了“无聊”的少年石田将也。</h2>
+						<h5>小学的时候就是个孩子王的他对转校生的少女西宫硝子产生了兴趣。</h5>
+					</li>
+					<li>
+						<h3>在她到来的期间</h3>
+						<h5>少年从无聊的日子里得到了解放。但是，因为硝子那件事，将也被周围孤立起来。</h5>
+					</li>
+					<li>
+						<h3>而后经过了五年的时间</h3>
+						<h5>，两人在不同的地方高中成长起来。“那件事”以来，将也见到硝子紧紧地封闭了自己的内心。</h5>
+					</li>
+				</ul>
+		</div>    
+		</div>  
+		<!-- //banner-text --> 
+	</div>	
+	<!-- //banner -->
+	<!-- welcome -->
+	<div class="welcome">
+
+			<div class="welcome-top">
+				<div class="col-md-6 welcome-left">
+					<div class="welcome-left-top">
+						<h3>石田将也</h3>
+						<h3>（いしだ　しょうや）</h3>
+						<p>小孩子时期是孩子王，是带头欺负硝子的人。但是自从出了硝子的事情被校长知道后以后就被周围的人孤立。一直都活在孤独和自我厌恶中。</p>
+					</div>
+				</div>
+				<div class="col-md-6 welcome-right"></div>
+				<div class="clearfix"></div>
+			</div>
+
+
+			<div class="welcome-bottom">
+				<div class="col-md-6 welcome-Middle-left"></div>
+				<div class="col-md-6 welcome-Middle-right">
+					<div class="welcome-left-top">
+						<h3>西宫硝子</h3>
+						<h3>（にしみや　しょうこ）</h3>
+						<p>先天性听觉障碍的少女。在日常生活中遭遇交流的障碍和各种失败。为了避免和别人产生矛盾，时常为讨好他人的笑着。</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+	</div>	  
+
+	<script type="text/javascript" src="./index_files/jquery-2.1.4.min.js.下载"></script>
+	<!-- js --> 
+	<!-- FlexSlider --> 
+	<script defer="" src="./index_files/jquery.flexslider.js.下载"></script>
+	<script type="text/javascript">
+		$(window).load(function(){		
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	</script>
+	<!-- End-slider-script -->
+	<script src="./index_files/SmoothScroll.min.js.下载"></script> 
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="./index_files/move-top.js.下载"></script>
+	<script type="text/javascript" src="./index_files/easing.js.下载"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->  	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./index_files/bootstrap.js.下载"></script>
+</body>
+</html>

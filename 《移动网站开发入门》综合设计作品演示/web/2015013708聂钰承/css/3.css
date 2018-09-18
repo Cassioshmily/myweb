@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+body, html, div, blockquote, img, label, p, h1, h2, h3, 
+
+h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{ 
+	margin: 0;
+	padding: 0;
+	border: 0;  
+	outline: none; 
+	text-align: left;
+	color: #000;
+}
+.clearit{clear:both;}
+.dabuju{ width:960px; margin:0 auto; border:1px solid #000000}
+.dingbu{ width:960px;  height:30px; line-height:30px;background: #CCC}
+.daohang{ width:960px; height:40px; background-color: #CCC  }
+.daohang p{ width:160px; height:40px; line-height:40px; float:left; text-align:center; color: #000}
+.daohang p a{ text-decoration:none;color:#000;  }
+.neirong{ width:960px; height:500px;border:1px  solid #000}
+.neirong h2{ font-size:36px}
+.neirong tr td p{ width:900px;  line-height:30px; font-size:14px; }
+.neirong tr td{ padding-left:22px;}
+.neirong h3{ font-size:16px}
+.zhongxin p{ line-height:40px;}
+.zhongxin{ width:960px; height:500px;}
+.zhongxin table tr td{border:1px  solid #000000 }
+.body p{ line-height:34px; font-size:14px}
+.body { width:960px; height:600px}
+.body table tr td{ text-align:center;border:1px solid #000000; }
+.center tr td img{ padding:10px}
+.center tr td p{ font-size:16px; line-height:50px; }
+.foot{ text-align:center; background-color: #CCC; height:40px; line-height:40px}
+.c tr td{ text-align:center; padding:10px;border:1px solid #000  }

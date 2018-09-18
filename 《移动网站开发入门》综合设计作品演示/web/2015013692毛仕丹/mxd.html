@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /> 
+<html>
+<head>
+  <link href="style/site.css" rel="stylesheet" type="text/css" /> 
+  <link href="http://ue.17173cdn.com/a/mxd2/index/2016/css/style.css" rel="stylesheet" type="text/css" />    <!--  -->
+   <link href="style/lunbo.css" rel="stylesheet"/>
+   <script src="js/lunbo.js">     /*网页图片轮播css和js模块*/
+   </script>
+<title>mxd2</title>
+<style type="text/css"> 
+ body {background-image:url(img/timg.jpg);background-repeat:no-repeat;
+  background-attachment:fixed;
+ 	color:red}      /*网页背景图，随着滚轮滚动*/
+ h1
+{
+text-shadow: 5px 5px 5px #33FFFF;
+}
+ h2
+{
+text-shadow: 5px 5px 5px #FFFF33;
+}
+h3
+{
+  text-decoration:blink
+}           /*字体的样式*/
+ p.lunkuo{border:red solid thin;outline:#00ff00 dotted thick;}
+ p.small {font-variant: small-caps}
+ p.leftmargin {margin-left: 2cm}
+ .center2{margin:auto;width:25%;}
+ .center1{margin:auto;width:20%;}
+ .center{margin:auto;width:40%;}
+#xz
+{
+
+transition:width 2s, height 2s;
+-moz-transition:width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
+-webkit-transition:width 2s, height 2s, -webkit-transform 2s; /* Safari and Chrome */
+-o-transition:width 2s, height 2s, -o-transform 2s; /* Opera */
+}
+#xz:hover
+{
+
+transform:rotate(360deg);
+-moz-transform:rotate(360deg); /* Firefox 4 */
+-webkit-transform:rotate(360deg); /* Safari and Chrome */
+-o-transform:rotate(360deg); /* Opera */
+}     /*2D旋转*/
+#bk
+{
+width:1000px;
+height:30px;
+background-color:#CCFF33;
+-moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+box-shadow: 10px 10px 5px #888888;
+}    /*文字阴影轮廓*/
+#berk
+{
+float:right;
+width:400px;
+margin:0 0 15px 20px;
+padding:15px;
+text-align:center;
+}   /*巴尔坎logo3D旋转*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+* { 
+  margin: 0; padding: 0; 
+  box-sizing: border-box; 
+}
+
+figure { 
+  margin: 0;
+  width: 100%;
+  height: 19vw;
+  background: url("img/5.jpg");
+  background-size: 100%; 
+  transform-origin: center bottom;
+  transform-style: preserve-3d;
+  transition: 1s transform;
+ }
+figure figcaption { 
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url("img/5.jpg");
+  background-size: 100%; height: 50px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #fff; 
+  position: relative; top: 29.5vw;
+  transform-origin: center top;
+  transform: rotateX(-89.9deg);
+  font-size: 1.2vw;
+  font-family: Montserrat, Arial, sans-serif;
+  text-align: center;
+  line-height: 3;
+}
+figure:before {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.1), inset 0 0 250px 250px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+  transform-origin: inherit;
+}
+div:hover figure { 
+  transform: rotateX(75deg) translateZ(5vw); 
+}
+div:hover figure:before {
+  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5), inset 0 0 250px 250px rgba(0, 0, 0, 0.5);
+  transform: rotateX(-5deg) translateZ(-80px) scale(1);
+  }    /*图片轮播*/
+
+</style>
+
+</head>
+<body>
+<ul class="nav-list js-nav">
+                    <li class="nav-item current first">
+                        <a href="http://mxd2.17173.com/" class="nav-con" target="_blank">专区首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://bbs.17173.com/forum-9915-1.html" class="nav-con" target="_blank">服装站</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://mxd2.17173.com/zl/music/index.shtml" class="nav-con" target="_blank">乐谱站</a>
+                    </li>  
+                     <li class="nav-item">
+                        <a href="http://mxd2.17173.com/zl/fb/index.shtml" class="nav-con" target="_blank">副本站</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://cha.17173.com/mxd2/item" class="nav-con" target="_blank">数据库</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://bbs.17173.com/forum-9907-1.html" class="nav-con" target="_blank">进入论坛</a>
+                    </li>
+                </ul> 
+<div class="nav-sub">
+                <a href="http://mxd2.17173.com/list/hahl.shtml" target="_blank" class="con">黑暗洪流</a>
+                <a href="http://mxd2.17173.com/list/mrrw/index.shtml" target="_blank" class="con">每日任务</a>
+                <a href="http://mxd2.17173.com/list/jq/index.shtml" target="_blank" class="con">技巧分享</a>
+                <a href="http://bbs.17173.com/thread-10300168-1-1.html" target="_blank" class="con">幸运商人商品</a>
+                <a href="http://bbs.17173.com/thread-10067699-1-1.html" target="_blank" class="con">称号获取(全)</a>
+                <a href="http://bbs.17173.com/thread-10021897-1-1.html" target="_blank" class="con">探险成就668星</a>
+                <a href="http://mxd2.17173.com/zl/gold/index.shtml" target="_blank" class="con">黄金宝箱901个<span class="hot"></span></a>
+                <a href="http://mxd2.17173.com/zl/diaoyu/index.shtml" target="_blank" class="con">隐藏鱼</a>
+</div>
+<div class="header-quick-start">
+<p class="item" data-mod-type="subNav" data-order="3"><span class="tit">新手上路：</span> <a href="http://mxd2.17173.com/content/02272017/110731218.shtml" class="con" target="_blank">快捷键位</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/content/09012017/144456648.shtml" class="con" target="_blank">如何赚钱</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/content/09202017/094222811.shtml" class="con" target="_blank">专属武器</a> <span class="sep">|</span> <a href="http://bbs.17173.com/thread-10423434-1-1.html" class="con" target="_blank">装备搭配</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/content/08292017/141137540.shtml" class="con" target="_blank">萌新点这里</a></p>
+<p class="item"><span class="tit">近期热点：</span> <a href="http://mxd2.17173.com/content/09142017/092832302.shtml" class="con" target="_blank">这些成就一定要做</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/content/04062017/114708384.shtml" class="con up" target="_blank">宝石的镶嵌与获取</a></p>
+<p class="item"><span class="tit">职业攻略：</span> <a href="http://mxd2.17173.com/zt/class/01/index.shtml" class="con" target="_blank">骑士</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/zt/class/02/index.shtml" class="con" target="_blank">狂战士</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/zt/class/03/index.shtml" class="con" target="_blank">魔法师</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/zt/class/04/index.shtml" class="con" target="_blank">牧师</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/zt/class/05/index.shtml" class="con" target="_blank">弓箭手</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/zt/class/06/index.shtml" class="con" target="_blank">重炮手</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/zt/class/07/index.shtml" class="con" target="_blank">侠盗</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/zt/class/08/index.shtml" class="con" target="_blank">刺客</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/zt/class/09/index.shtml" class="con up" target="_blank">符文剑士</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/zt/class/10/index.shtml" class="con" target="_blank">启灵师</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/zt/class/11/index.shtml" class="con" target="_blank">街霸</a> <span class="sep">|</span> <a href="http://mxd2.17173.com/zt/zl/libao/index.shtml" class="con up" target="_blank" pingno="fahao">领取礼包<span class="hot"></span></a> </p>
+<b class="bg"></b>
+</div> 
+
+ <div id="container">
+   <div id="list" style="left:-600px;">
+     <img src="img/1.jpg" style="width:600px;height:400px;" alt="First slide"/>
+     <img src="img/2.jpg" style="width:600px;height:400px;" alt="Second slide"/>
+     <img src="img/3.jpg" style="width:600px;height:400px;" alt="Third slide"/>
+     <img src="img/4.jpg" style="width:600px;height:400px;" alt="fourth slide"/>
+   </div>
+      <div id="buttons">
+     <span index="1" class="on"> </span>
+     <span index="2"></span>
+     <span index="3"></span>
+     <span index="4"></span>
+   </div>
+   <a href="javascript:;" class="arrow" id="prev">&lt;</a>
+   <a href="javascript:;" class="arrow" id="next">&gt;</a>
+ </div>
+
+
+<div class="center2"><h1>迷宫集会堂</h1></div>
+<div id="berk"><div onclick="">
+  <figure>
+    <figcaption>巴尔坎提示文后有攻略视频哦</figcaption>
+  </figure>
+</div>
+
+<div style="text-align:center;clear:both">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+  </div>
+ <div class="center" id="xz" ><img src="http://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/oobOqHblArdvFkF.jpg" /></div>
+ <h2>副本位置：</h2><div>卡尔卡尔岛-纳兹卡尔中央</div>
+ <h2>副本名称：</h2><div>迷宫集会堂‘大宝剑’</div>
+ <h2>副本人数：</h2><div>10人本</div>
+ <h2>副本次数：</h2><div>每周五次(每周星期五0点初始化)</div>
+ <h2>副本简介：</h2><div>‘迷宫集会堂’是游戏中具有挑战性10人大本之一，而且也是玩家每周必清周本。</div>
+ <h2>副本掉落: </h2><div>50级各职业紫装、狂战士专属武器、附魔宝石等。</div>
+ <h2>副本队伍配置：</h2><div>牧师2名、法系和物理DPS输出平均分配。</div>
+
+ <div class="center"><img src="http://i3.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/rYzLlablkgBiCdq.jpg" /></div>
+ <ul class="none"><div id="bk">副本以迷宫方式进入分为四层，进入之前先在副本外把队伍分配好，10人队伍分为两组。
+ 副本前三层以清怪为主，把分配好的两组队伍兵分两路来清怪。</div></ul><br />
+
+ <div class="center"><img src="http://i2.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/sgqrdgblkgBiBFx.jpg" /></div>
+ <ul class="none"><div id="bk">第一层队伍兵分两路，每五人为一组、每一组配一位牧师跟随。小怪伤害很高，会使玩家SP清空。</div></ul><br />
+
+ <div class="center"><img src="http://i3.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/KfISQRblkgBiBEF.jpg" /></div>
+ <div class="center"><img src="http://i1.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/yrJunhblkgBiBFd.jpg" /></div>
+ <ul class="none"><div id="bk">第二层两组队伍不变继续按照前期分配分工来清怪，左边清怪的玩家清理完小怪要举坛子砸右边的怪来协助队友清理。</div></ul><br />
+
+ <div class="center"><img src="http://i1.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/mTNyTnblkgBiBBw.jpg" /></div>
+ <ul class="none"><div id="bk">第三层进入后全队十人集体先清理中间一条道的小怪，清理后继续兵分两路开始清理。</div></ul><br />
+
+ <div class="center"><img src="http://i2.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/mBevBKblkgBiBAn.jpg" /></div>
+ <ul class="none"><div id="bk">前三层怪物清理结束，我们进入‘迷宫集会堂’第四层来挑战副本BOSS卡波。BOSS血量4100万，为了减少死亡建议大家按照小编前面说的队伍配置来组队挑战，接下来给大家介绍下BOSS卡波技能和一些打法注意事项。</div></ul><br />
+
+ <div class="center"><img src="http://i3.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/ILIWLBblkgBiBys.jpg" /></div>
+ <div class="center"><img src="http://i2.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/JqIWkbblkgBiBxh.jpg" /></div>
+ <ul class="none"><div id="bk">BOSS技能一：卡波在台阶四周召唤龙卷风，玩家触碰后会降低移动速度，如果玩家触碰到需要立即瞬移开。</div></ul><br />
+
+ <div class="center"><img src="http://i1.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/zyYjjqblkgBiBvy.jpg" /></div>
+ <ul class="none"><div id="bk">BOSS技能二：卡波在台阶上释放十字形状的火焰，伤害很高。玩家触碰到很伤，容易死。这里注意躲避，在追打BOSS的时候注意走没有火的道。</div></ul><br />
+
+ <div class="center"><img src="http://i1.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/NgpiXbblkgBiBvD.jpg" /></div>
+ <div class="center"><img src="http://i1.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/CsRxHDblkgBiBuq.jpg" /></div>
+ <div class="center"><img src="http://i2.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/vhhzdjblkgBiBtk.jpg" /></div>
+ <ul class="none"><div id="bk">BOSS技能三：卡波使用冲击波来攻击玩家，卡波瞬移释放的冲击波比较粗，原地释放的比较细，玩家注意躲避。</div></ul><br />
+
+ <div class="center"><img src="http://i3.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/hHhpgJblkgBiBpd.jpg" /></div>
+ <div class="center"><img src="http://i1.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/TUFtexblkgBiBpg.jpg" /></div>
+ <div class="center"><img src="http://i1.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/WYjWgzblkgBiBpc.jpg" /></div>
+ <ul class="none"><div id="bk">BOSS技能四：卡波召唤出小怪来协助作战，小怪需要玩家迅速清理掉因为小怪会把玩家的蓝清零还会给BOSS回血。召唤出的小怪如果是蓝色的需要法系伤害的玩家去打，红色的需要物理伤害的玩家来打。</div></ul><br />
+
+ <div class="center"><img src="http://i2.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/RGMxlNblkgBiBpw.jpg" /></div>
+ <div class="center"><img src="http://i2.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/THaIxIblkgBiBpm.jpg" /></div>
+ <ul class="none"><div id="bk">BOSS技能五：卡波会纵身跳跃向地面狠狠打出致命一击，打卡波的时候玩家尽量在他的身后来输出。</div></ul><br />
+
+ <div class="center"><img src="http://i3.17173cdn.com/2fhnvk/YWxqaGBf/mxd2/250/KweeySblkgBiBpa.jpg" /></div>
+ <ul class="none"><div id="bk">副本总结：这个副本记住一点保持在BOSS的身后去输出，各职业搭配好牧师是不可缺少的最好2个。副本全程有很多技巧，国服三测也是取消了副本挑战时间限制，所以打起来不用太着急。
+ 希望对一些新手玩家有一些帮助，祝岛2玩家游戏愉快。</div></ul><br />
+ 
+<div id="container">
+<embed src="http://v.17173.com/player_ifrm/MzQ0NDk1ODg.html" autostart="false" loop="false" style="width:600px;height:400px;" ></div>
+ </body>
+
+</html>

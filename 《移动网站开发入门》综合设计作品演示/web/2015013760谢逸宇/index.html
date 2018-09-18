@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 未闻花名</title>
+    <link rel="stylesheet" type="text/css" href="./static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./static/content/site.css" />
+    <script src="./static/scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="./index.html" class="navbar-brand">首页</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="./emmm.html">图片欣赏</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        <div class="jumbotron" style="background-image: url('timg.jpg');border-image-repeat: no-repeat;background-size: 100% 100%;">
+    <h1>あの日見た花の名前を僕達はまだ知らない</h1>
+    <p class="lead" >我们仍未知道那天所看见的花的名字</p>
+  
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>剧情介绍</h2>
+        <p>    
+        </p>
+        <p><a class="btn btn-default" href="./home.html">点这儿 &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>人物介绍</h2>
+        <p>
+        </p>
+        <p><a class="btn btn-default" href="./about.html">点这儿 &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>制作信息</h2>
+        <p>
+        </p>
+        <p><a class="btn btn-default" href="./fpga.html"./>点这儿 &raquo;</a></p>
+    </div>
+</div>
+        <hr />
+     <script>
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+    </script>       
+ <body onload="startTime()">
+<footer style="text-align: center;">
+<div id="txt"></div>
+<p>By xyy</p>
+<p>如有雷同纯属偶然</p>
+</div><embed src="../xyy/gequ.mp3" width="0" height="0" loop="false"></embed>
+</body>
+
+        </footer>
+    </div>
+
+    <script src="./static/scripts/jquery-1.10.2.js"></script>
+    <script src="./static/scripts/bootstrap.js"></script>
+    <script src="/static/scripts/respond.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".yc").hide();
+  });
+  $("#show").click(function(){
+    $(".yc").show();
+  });
+});
+</script>
+
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+
+<style>
+body{
+	background-image: url(beijing.jpg);	
+}
+
+.ks
+{
+	color: red ; 
+	font-size: 60px;
+}
+h1.m1
+{
+	color:black;	
+}
+h1.m2
+{
+	color:green;	
+}
+</style>
+
+</head>
+<body>
+<h1 class="m1" style="position:absolute; left:300px;  top:200px;" ><a href="shouye.html">网站首页</a></h1>
+<h1 class="m1" style="position:absolute; left:300px;  top:300px;" ><a href="chide.html">吃の诱惑</a></h1>
+<h1 class="m1" style="position:absolute; left:300px;  top:400px;" ><a href="yingshi.html">影视介绍</a></h1>
+<h1 class="m1" style="position:absolute; left:300px;  top:500px;" ><a href="zuozhe.html">关于作者</a></h1>
+<img  src="bg4.jpg"  width="20px"; height="20px" style="position:absolute; left:280px;  top:230px; ">
+<img  src="bg4.jpg"  width="20px"; height="20px" style="position:absolute; left:280px;  top:330px; ">
+<img  src="bg4.jpg"  width="20px"; height="20px" style="position:absolute; left:280px;  top:430px; ">
+<img  src="bg4.jpg"  width="20px"; height="20px" style="position:absolute; left:280px;  top:530px; ">
+
+<img  src="xixi.gif"   style="position:absolute; width:220px; height:100px;left:670px;  top:30px; ">
+</body>
+<body onload="startTime()">
+<div  id="txt" style="position:absolute;left:215px;  top:720px;font-size: 60px;color:#FF8C00 ;"></div>
+</body>
+<div  style="position:absolute;width:470px; height:150px; left:1200px;  top:50px;background-image:url(gelidai.jpg)">
+<div><p class="ks" style="position:absolute;left:250px;  top:-50px;">别流<br>口水
+		</p></div>
+</div>
+
+<img  src="chichi.jpg"  width="120px"; height="120px" style="position:absolute; left:1030px;  top:470px; ">
+<img  src="chi1.jpg"  width="360px"; height="270px" style="position:absolute; left:670px;  top:201px; ">
+<img  src="chi2.jpg"  width="360px"; height="270px" style="position:absolute; left:1150px;  top:201px; ">
+<img  src="chi3.jpg"  width="360px"; height="270px" style="position:absolute; left:670px;  top:590px; ">
+<img  src="chi4.jpg"  width="360px"; height="270px" style="position:absolute; left:1150px;  top:590px; ">
+</html>

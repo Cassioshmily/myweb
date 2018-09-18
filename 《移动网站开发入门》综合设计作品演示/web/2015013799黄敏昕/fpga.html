@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视觉处理学习网页</title>
+    <link rel="stylesheet" type="text/css" href="./static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./static/content/site.css" />
+    <script src="./static/scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="./index.html" class="navbar-brand">Home</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href=".emmm.html" target="_blank">我的JS</a></li>
+                    <li><a href="./second.html" target="_blank">我的CSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+		<h2>FPGA系统</h2>
+		<h3>soc板gpio的控制</h3>
+			<i><ul class="circle"><li>
+				使用简单的verilog或者vhdl描述电路控制gpio口已经实现，没有什么问题
+			</li></ul></i>
+		<h3>soc板电机及传感器的驱动</h3>
+		<h3>soc板摄像头的驱动</h3>
+			<i><ul class="circle"><li>
+				目前使用实例代码运行，通过vga接口输出采集到的图像。正在研究摄像头采集到的数据的保存及处理。
+			</li></ul></i>
+		<h3>与hps的交互</h3>
+			
+        <hr />
+  <script>
+	function startTime()
+	{
+	var today=new Date()
+	var h=today.getHours()
+	var m=today.getMinutes()
+	var s=today.getSeconds()
+	// add a zero in front of numbers<10
+	m=checkTime(m)
+	s=checkTime(s)
+	document.getElementById('txt').innerHTML=h+":"+m+":"+s
+	t=setTimeout('startTime()',500)
+	}
+
+	function checkTime(i)
+	{
+	if (i<10) 
+	  {i="0" + i}
+	  return i
+	}
+	</script>       
+	
+	<footer style="text-align: center;"> 
+	<body onload="startTime()">
+	<div id="txt"></div>
+	<p>By Cassioshmily</p>
+	<p>Always Keep The Faith...Hope To The End</p>
+	</div>
+	</body>
+    </footer>
+    </div>
+
+    <script src="./static/scripts/jquery-1.10.2.js"></script>
+    <script src="./static/scripts/bootstrap.js"></script>
+    <script src="./static/scripts/respond.js"></script>
+
+</body>
+</html>

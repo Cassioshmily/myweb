@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset,input, th, td
+{margin: 0; padding: 0; border: 0; font-family:"微软雅黑";}
+a {color: #000000;} 
+A:link {TEXT-DECORATION: none;}
+A:visited {TEXT-DECORATION: none;}
+A:hover {TEXT-DECORATION: underline;color:red;}
+ul,li{list-style-type:none;}
+.clearfix{clear:both;}
+
+.beijing{ background-color:#afcbd8;width:1000px; margin: 0 auto;}
+.shouye a{color:red;}
+.nav-box{padding:30px 20px;}
+.nav-box img{float:left;}
+.nav{width:960px;height:80px; background:#000000}
+.nav li{ float:left; line-height:80px;padding:0 40px;}
+.nav li a{color:#FFFFFF;}
+.banner{ float:left;}
+.banner img{float:left;width:960px;margin-left:20px;margin-top:20px;}
+.jieshao{margin-top:40px; margin:0 auto;}
+.jieshao p{width:700px; text-align:center; margin:0 auto; line-height:40px;}
+.jieshao img{ float:left; padding:10px 10px;}
+.jieshao .tu{width:850px; margin:0 auto;}
+.yejiao{ float:left;background-color:#333333; width:960px;height:50px; margin-left:20px; color:#CCCCCC; text-align:center; line-height:50px;}
+
+.sheding a{color:red;}
+.shedingjieshao { width:700px;text-align:center; margin:0 auto;padding-bottom:30px;}
+.shedingjieshao h3{width:500px; margin:0 auto;line-height:30px; padding:30px;}
+.shedingjieshao p{width:700px; line-height:30px; }
+
+.tupian a{ color:red;}
+.rw{ width:100px ; margin:0 auto;padding:40px;}
+.tp{ width:960px; margin:0 auto;}
+.tp img{ float:left; padding:10px;}
+
+.zhuangbei a{ color:red;}
+.js{width:700px; margin:0 auto;}
+.js h3{width:700px; float:left; text-align:center; padding:20px;}
+.js p{ width:700px;float:left; line-height:30px; padding:20px;}
+
+.liuyan a{ color:red;}
+.bg { width:280px; margin:0 auto;}
+.bg p{ padding:20px;}
+.zuo{ float:left;}
+.you{ float:right;}
+form{float:left;padding-top:30px; padding-bottom:40px;}
+.liuyanban{width:660px; margin:0 auto;}
+.liuyanban p{width:600px; margin-top:30px; float:left;}
+.liuyanban p label{width:80px; float:left;}
+.liuyanban p .biaodan{width:250px; float:left; border:1px solid #99CC00; height:30px;}
+#message{width:250px; height:80px; float:left; border:1px solid #99CC00;}
+.btn{width:90px; height:30px; line-height:30px; background:#999900; float:left; margin-left:20px;}

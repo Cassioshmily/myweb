@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<style type="text/css">
+.hvcenter {
+  position: absolute;
+      top: 40%;
+      left: 50%;
+      text-align:center;
+      transform: translateX(-50%) translateY(-40%);
+}
+
+.hcenter {
+  position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+}
+
+.bigtitle {
+color: #FFFFFF;
+font-size: 54px;
+text-shadow: 2px 2px 0 rgba(44,62,80,0.9),5px 5px 0 rgba(44,62,80,0.9);
+}
+</style>
+<link rel="stylesheet" href="static/css/buttons.css">
+
+{% endblock %}
+
+{% block content %}
+<div class="hvcenter">
+<div class="bigtitle">Documents<br> of ZWU's boss</div>
+<div class="hcenter">
+  <br><br><br><br>
+   <a href="/home" class="button button-glow button-border button-rounded button-primary">Get Started</a>
+ </div>
+</div>
+<script src="static/js/jquery.backstretch.min.js"></script>
+<script src="static/js/bigimage.js"></script>
+{% endblock %}

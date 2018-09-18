@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视觉处理学习网页</title>
+    <link rel="stylesheet" type="text/css" href="./static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./static/content/site.css" />
+    <script src="./static/scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="./index.html" class="navbar-brand">Home</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href=".emmm.html" target="_blank">我的JS</a></li>
+                    <li><a href="./second.html" target="_blank">我的CSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+		<h2>图像处理算法</h2>
+		<h3>opencv</h3>
+			<i><ul class="circle">
+				<li>opencv在的安装与实现见<a href="https://docs.opencv.org/master/" target="_blank">官网地址</a>，目前使用官方的学习成果及python库实现人脸及面部识别，详情见Face_detection
+					</li>
+				<li>效果如图
+						<p>
+							<img src="./example.png" width="1000" height="700" />
+						</p>
+				</li></ul>
+		<h3>深度学习</h3>
+			<i><ul class="circle">
+				<li>可以通过机器学习领域的深度学习来进行面部及手势等识别内容的学习，并且提高识别的精确度，官方文档;目前的技术还不够，暂时没有这方面的研究计划。
+				</li>
+				</ul></i>
+		<h3>计算机视觉库opencv的使用</h3>
+		<h3>opencv视频流处理</h3>
+		<h3>被识别物体的位置判断</h3>
+		<h3>openCL环境的使用</h3>
+		<h3>图像识别控制在树莓派上的实践(图片采集识别)</h3>
+		<h3>树莓派视频流采集及识别</h3>
+		<h3>算法在soc上的实践(视觉控制小车)</h3>
+		<h3>双摄像头的3D视觉实现(双目避障效果)</h3>
+		<h3>openCV高级视觉处理</h3>
+		<h3>机器学习算法</h3>
+			<ul class="sic">
+				<li>通过深度学习提高图像识别精确度</li>
+			</ul>
+
+        <hr />
+  <script>
+	function startTime()
+	{
+	var today=new Date()
+	var h=today.getHours()
+	var m=today.getMinutes()
+	var s=today.getSeconds()
+	// add a zero in front of numbers<10
+	m=checkTime(m)
+	s=checkTime(s)
+	document.getElementById('txt').innerHTML=h+":"+m+":"+s
+	t=setTimeout('startTime()',500)
+	}
+
+	function checkTime(i)
+	{
+	if (i<10) 
+	  {i="0" + i}
+	  return i
+	}
+	</script>       
+	 <body onload="startTime()">
+	<footer style="text-align: center;">
+	<div id="txt"></div>
+	<p>By Cassioshmily</p>
+	<p>Always Keep The Faith...Hope To The End</p>
+	</div></body>
+
+    </footer>
+    </div>
+
+    <script src="./static/scripts/jquery-1.10.2.js"></script>
+    <script src="./static/scripts/bootstrap.js"></script>
+    <script src="./static/scripts/respond.js"></script>
+
+</body>
+</html>

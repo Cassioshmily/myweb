@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+ 
+<style type="text/css"> 
+ 
+body 
+h1 {background-color: #ffffff;text-align:center;text-shadow: 5px 5px 5px #FF0000;}
+p.no2 {background-color: gray; padding: 30px;border:red solid thin;outline:#00ff00 dotted thick;}
+p.italic {font-style:italic;color:#FFffff;text-align:center}
+p.small {font-variant: small-caps;font-weight: bold;color:#FFffff;text-align:center}
+a:link {color:#FF0000;}    /* 未被访问的链接 */
+a:visited {color:#00FF00;} /* 已被访问的链接 */
+a:hover {color:#FF00FF;}   /* 鼠标指针移动到链接上 */
+a:active {color:#0000FF;}  /* 正在被点击的链接 */
+ul {list-style-type : square}
+table,th,td {color:#FFffff;border:1px solid red;}
+ul.circle {list-style-type:circle;text-align:center}
+b {text-shadow: 5px 5px 5px #FF0000;}
+</style>
+ 
+</head>
+ 
+<body background="tu2.jpg">
+ 
+ <embed src="m.mp3" width="0" height="0"></embed>
+
+<h1>东哥的日常</h1>
+
+
+ <style type="text/css">
+<!--
+#Layer1 {
+  position:absolute;
+  width:116px;
+  height:118px;
+  z-index:1;
+  left: 780px;
+  top: 290px;
+}
+#Layer2 {
+  position:absolute;
+  width:120px;
+  height:128px;
+  z-index:1;
+  left: 399px;
+  top: 180px;
+}
+</style>
+</head>
+
+<div id="Layer1"><a href="1.html"><img src="1.png" width="116" height="118" border="0" /></a></div>
+<div id="Layer2"><a href="2.html"><img src="2.png" width="120" height="128" border="0" /></a></div>
+<p><a href="#"></a></p>
+
+
+<p><b><a href="http://www.4399.com" target="_blank">这是一个链接</a></b></p>
+ 
+<center><p class="no2"><img src="1.jpg" /></p></center>
+
+
+<b><center><script type="text/javascript">
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',250)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+</head>
+
+
+
+<right><script>
+function changeImage()
+{
+element=document.getElementById('myimage')
+if (element.src.match("2"))
+  {
+  element.src="3.jpg";
+  }
+else
+  {
+  element.src="2.jpg";
+  }
+}
+</script>
+</right>
+<img id="myimage" onclick="changeImage()" src="3.jpg">
+
+
+<body onload="startTime()">
+<div id="txt"></div></center></b>
+
+<img id="myimage" onclick="changeImage()" src="/i/eg_bulboff.gif">
+
+
+<p id="demo"></p>
+
+
+<p>点击下面的按钮来显示今天是周几：</p>
+
+<button onclick="myFunction()">点击这里</button>
+
+<p id="demo"></p>
+
+<center><script>//switch
+function myFunction()
+{
+var x;
+var d=new Date().getDay();
+switch (d)
+  {
+  case 0:
+    x="Today it's なな";
+    break;
+  case 1:
+    x="Today it's YI";
+    break;
+  case 2:
+    x="Today it's 贰";
+    break;
+  case 3:
+    x="Today it's ③";
+    break;
+  case 4:
+    x="Today it's 四";
+    break;
+  case 5:
+    x="Today it's Fri";
+    break;
+  case 6:
+    x="Today it's 6";
+    break;
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script></center>
+
+
+  
+    <input type="button" onclick="fun()" value="东的德莱文是真的强！">
+
+ </html> 
+
+  <html>
+
+
+<h1>我随便打打的</h1>
+
+
+<p id="demo">东是真的！强！！！！！！！.</p>
+
+
+
+  <script type="text/javascript">//交互
+    function validate(){
+      account=document.loginForm.account.value;
+    
+      if(account=="" ){
+        alert("没密码登录个屁啊！");
+        document.getElementById("acc").value="楼东东是真的强！！！";
+        document.loginForm.account.focus(); return; }
+      document.loginForm.submit(); }
+  </script>
+
+  <center>膜拜东神！举世无双！：
+  <form name="loginForm">
+    怕死沃德：<input name="account" id="acc"  type="text"><br>
+    
+    <input type="button" onclick="validate()" value="登录">
+  </form>
+
+ <center><img src="66.jpg" /><img src="77.jpg" /></p></center>
+</body>
+</html>

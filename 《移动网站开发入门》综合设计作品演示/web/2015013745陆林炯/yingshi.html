@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".yc").hide();
+  });
+  $("#show").click(function(){
+    $(".yc").show();
+  });
+});
+</script>
+
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+
+<style>
+body{
+	background-image: url(beijing.jpg);	
+}
+
+.ks
+{
+	color: red ; 
+	font-size: 60px;
+}
+h1.m1
+{
+	color:black;	
+}
+h1.m2
+{
+	color:green;	
+}
+</style>
+
+</head>
+<body>
+<h1 class="m1" style="position:absolute; left:300px;  top:200px;" ><a href="shouye.html">网站首页</a></h1>
+<h1 class="m1" style="position:absolute; left:300px;  top:300px;" ><a href="chide.html">吃の诱惑</a></h1>
+<h1 class="m1" style="position:absolute; left:300px;  top:400px;" ><a href="yingshi.html">影视介绍</a></h1>
+<h1 class="m1" style="position:absolute; left:300px;  top:500px;" ><a href="zuozhe.html">关于作者</a></h1>
+<img  src="bg4.jpg"  width="20px"; height="20px" style="position:absolute; left:280px;  top:230px; ">
+<img  src="bg4.jpg"  width="20px"; height="20px" style="position:absolute; left:280px;  top:330px; ">
+<img  src="bg4.jpg"  width="20px"; height="20px" style="position:absolute; left:280px;  top:430px; ">
+<img  src="bg4.jpg"  width="20px"; height="20px" style="position:absolute; left:280px;  top:530px; ">
+
+<img  src="xixi.gif"   style="position:absolute; width:220px; height:100px;left:670px;  top:30px; ">
+</body>
+<body onload="startTime()">
+<div  id="txt" style="position:absolute;left:215px;  top:720px;font-size: 60px;color:#FF8C00 ;"></div>
+</body>
+<img  src="ls.jpg"  width="360px"; height="480px" style="position:absolute; left:580px;  top:180px; ">
+<div  style="position:absolute;width:450px; height:330px; left:505px;  top:560px;background-image:url(wbk2.png)">
+<div><p style="position: absolute;left:90px;  top:130px;">
+        简介：在《雷神3》中，雷神托尔被囚禁于宇宙<br>
+        的另一端，竭尽全力想要赶回阿斯加德，阻止<br>
+        诸神黄昏的发生。残酷无情的海拉是诸神黄昏<br>
+        的发起者，她要借此毁掉阿斯加德和这里的所<br>
+        有人。在赶回阿斯加德前，托尔必须先在危险<br>
+        的角斗场上存活下来，他的对手竟是曾经的伙<br>
+        伴绿巨人，而且托尔还失去了自己的神锤！
+    </p></div>
+</div>
+<img  src="qq.jpg"  width="420px"; height="560px" style="position:absolute; left:1200px;  top:100px; ">
+<div  style="position:absolute;width:450px; height:330px; left:1150px;  top:560px;background-image:url(wbk2.png)">
+<div><p style="position: absolute;left:90px;  top:110px;">
+        简介：影片讲述了当可以改变地球气候的卫星<br>
+        发生故障后的危机。人类每次在经历过大自然<br>
+        的灾难之后，总是造成难以估计的生命与财产<br>
+        损失，为此，全世界的领导人联手，共同创造<br>
+        出一套复杂的人造卫星系统，用来控制全球气<br>
+        候并保护人类安全。这项计划取得了空前的成<br>
+        功。但如今却出了意外状况，这套原本用来保<br>
+        护地球的天气系统竟反过头来攻击人类，科学<br>
+        家们必须与时间赛跑，在这场全球性的灾难摧<br>
+        毁天地万物之前，找出真正的原因与威胁……
+    </p></div>
+</div>
+
+
+
+<p class="ks" style="position: absolute; left:970px;  top:230px;">想看！!</p>
+<p class="ks" style="position: absolute; left:1040px;  top:380px;">有<br>人<br>约<br>么<br>？</p>
+
+
+</html>

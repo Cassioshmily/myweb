@@ -1,0 +1,204 @@
+﻿<!doctype html>
+<html>
+<center><h2><font color="#FFFF00">Welcome to Sword Art Online! 刀剑神域(ni de ming zi)  3.0</font>
+</h2></center>
+
+<p><center><button type="button"><font size="6" color="#0000FF">据说这里可以点一下</font></button></center></p>
+
+ <script type="text/javascript">
+    function validate()
+    {
+      account=document.loginForm.account.value;
+      password=document.loginForm.password.value;
+      if(account==""){
+        alert("帐号不能为空");
+        document.getElementById("acc").value="2";
+        document.loginForm.account.focus(); return; }
+      document.loginForm.submit(); }
+  </script>
+
+  <style type="text/css">
+</style>
+</head>
+<p><div><a href="second.html"><h1>Catch the monent！</h1></a></div></p>
+
+
+  <form name="loginForm">
+    <big><font color="#F0F8FF">输入帐号：<input name="account" id="acc"  type="text"><br></big>
+    <big><font color="#F0F8FF">输入密码：<input name="password" type="password"><br></big>
+    <input type="button" onclick="validate()" value="登录">
+  </form>
+
+<p><button onclick="displayDate()">当前时间</button>
+<script>
+function displayDate()
+{
+document.getElementById("demo2").innerHTML=Date();
+}
+</script></p>
+<p id="demo2"></p>
+
+<table>
+<tr>
+<th>Kirito</th>
+<th>Asuna</th>
+</tr>
+<tr>
+<th>LV93</th>
+<th>LV82</th>
+</tr>
+<tr>
+<th>age16</th>
+<th>age17</th>
+</tr>
+</table>
+
+<body>
+   <a onclick="history.forward()"><h1>上一步如何？</h1></a>
+   <script type="text/javascript">
+    function fun(){
+       document.title="WeixiaoのSAO世界";
+       window.alert(document.location);
+    }
+    </script>
+
+<script type="text/javascript">
+    var number=0;
+    var str0="你感觉点几下才算有诚意：";
+    while(number<3)
+     {
+      number++;
+      str1=str0+number;
+      print(str1);
+    }
+    function print(str){window.alert(str);}
+    </script>
+
+<p><input type="button" onclick="fun()" value="这只是一个游戏"><p>
+<head>
+<style type="text/css">
+table,th
+{
+border:1px solid yellow;
+}
+th
+  {
+  background-color:yellow;
+  color:black;
+  }
+  body {font-family:sans-serif;}
+h2
+{
+border:#3300FF solid thin;
+outline:#00ff00 dotted thick;
+}
+h1 {letter-spacing:1px}
+
+a:link {color:#FF0000;}    
+a:visited {color:#00FF00;} 
+a:hover {color:#FF00FF;}   
+a:active {color:#0000FF;}  
+</style>
+<p></head>
+
+ </body>
+
+<script type="text/javascript">
+    document.writeln("<table width=115 height=115 border=1>");
+    for(i=1;i<=6;i++){
+       document.writeln("<tr>")
+       for(j=1;j<=6;j++){
+          color="white";
+          if((i+j)%2==0){color="black";}
+          document.writeln("<td bgcolor="+color+"></td>");
+       }
+       document.writeln("</tr>");
+    }
+    document.writeln("</table>");
+  </script>
+
+ <br>
+   <font color="#F0F8FF">桐谷和人的SAO ID叫什么？<br>
+   <input type="radio" name="sex" value="male" checked><font size="4" 	color="#F0F8FF">Kirito</font>
+  <br>
+   <input type="radio" name="sex" value="female"><font size="4" 	color="#F0F8FF">韩金龙</font>
+
+</style>
+</head>
+<body>
+<style> 
+div
+	{
+	width:150px;
+	height:115px;
+	background:ff0000;
+	color:#ffff00;
+	position:relative;
+	font-weight:bold;
+	font:bold 12px '微软雅黑', Verdana, Arial, Helvetica, sans-serif;
+	padding:20px 10px 0px 10px;
+	animation:animated_div 5s 19;
+	-moz-animation:animated_div 5s 19;
+	-webkit-animation:animated_div 5s 19;
+	-o-animation:animated_div 5s 19;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	}
+
+@keyframes animated_div
+	{
+	0%		{transform: rotate(0deg);left:0px;}
+	25%		{transform: rotate(20deg);left:0px;}
+	50%		{transform: rotate(0deg);left:500px;}
+	55%		{transform: rotate(0deg);left:500px;}
+	70%		{transform: rotate(0deg);left:500px;background:#1ec7e6;}
+	100%	{transform: rotate(-360deg);left:0px;}
+	}
+
+@-webkit-keyframes animated_div
+	{
+	0%		{-webkit-transform: rotate(0deg);left:0px;}
+	25%		{-webkit-transform: rotate(20deg);left:0px;}
+	50%		{-webkit-transform: rotate(0deg);left:500px;}
+	55%		{-webkit-transform: rotate(0deg);left:500px;}
+	70%		{-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+	100%	{-webkit-transform: rotate(-360deg);left:0px;}
+	}
+
+@-moz-keyframes animated_div
+	{
+	0%   {-moz-transform: rotate(0deg);left:0px;}
+	25%  {-moz-transform: rotate(20deg);left:0px;}
+	50%  {-moz-transform: rotate(0deg);left:500px;}
+	55%  {-moz-transform: rotate(0deg);left:500px;}
+	70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+	100% {-moz-transform: rotate(-360deg);left:0px;}
+	}
+
+@-o-keyframes animated_div
+	{
+	0%   {transform: rotate(0deg);left:0px;}
+	25%  {transform: rotate(20deg);left:0px;}
+	50%  {transform: rotate(0deg);left:500px;}
+	55%  {transform: rotate(0deg);left:500px;}
+	70%  {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+	100% {transform: rotate(-360deg);left:0px;}
+	}
+</style>
+
+
+<p><h1><font color="#F0F8FF">序章：</font></h1></p>
+<ol>
+<font color="#F0F8FF"><li><b>艾恩葛朗特篇<b></li></font>
+<font color="#F0F8FF"><li><b>妖精之舞篇<b></li></font>
+<font color="#F0F8FF"><li><b>幽灵子弹篇<b></li></font>
+<font color="#F0F8FF"><li><b>圣母圣咏篇<b></li></font>
+</ol>
+<a href="http://www.le.com/comic/78569.html "><h1>Link Start！</h1></a>
+
+<body background="100.jpg">
+<p><img src="300.jpg" width="256" height="160" /></p>
+
+<embed src="INVOKE.mp3" hidden="true" autostart="true" loop="true">
+</body>
+</html>
